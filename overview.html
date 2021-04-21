@@ -152,42 +152,18 @@
              <li class="usa-sidenav__item">
               <a href="types.html" class="usa-current">Overview</a><ul class="usa-sidenav__sublist">
                 <li class="usa-sidenav__item">
-                    <a href="" class="">New System Idea</a><ul class="usa-sidenav__sublist">
-                      <li class="usa-sidenav__item">
-                    <a href="#intake">EASi Intake Form</a>
-                  </li>
-                  <li class="usa-sidenav__item">
-                    <a href="#consult">Governance Review Team</a>
-                  </li>
-                  <li class="usa-sidenav__item">
-                    <a href="#present">Governance Review Board</a>
-                  </li>
-                  <li class="usa-sidenav__item">
-                    <a href="#arch">Enterprise Architecture Activities</a>
-                  </li>
-                  <li class="usa-sidenav__item">
-                    <a href="#pack">Authorization Package</a>
-                  </li>
+                    <a href="" class="">How to use this site</a><ul class="usa-sidenav__sublist">
+                     
                   
               </ul>
             </li>
 
             <li class="usa-sidenav__item">
-                <a href="" class="">Categorize System Security</a><ul class="usa-sidenav__sublist">
-                  <li class="usa-sidenav__item">
-                <a href="">Sub-section</a>
-              </li>
+                <a href="" class="">Phases</a><ul class="usa-sidenav__sublist">
+                 
               </ul>
             </li>
 
-
-            <li class="usa-sidenav__item">
-                <a href="" class="">Implement Security Controls</a><ul class="usa-sidenav__sublist">
-                  <li class="usa-sidenav__item">
-                <a href="">Sub-section</a>
-              </li>
-              </ul>
-            </li>
             
             </ul>
           </nav>
@@ -195,100 +171,74 @@
                 </div>
           
                 <main class="usa-layout-docs__main desktop:grid-col-9 usa-prose usa-layout-docs" id="main-content">
-                  <h1>Initiate</h1>
+                  <h1>Overview</h1>
           
-                  <p class="usa-intro">Before starting the process to create a new system, you should determine if there is an existing solution already at CMS. If there is, no need to recreate the wheel. However, if a system is needed, it is very too early to start the process.</p>
+                  <p class="usa-intro">The goal of this site is to provide the CMS Security and Privacy community with the information and best practices needed to launch software from a technical and compliance perspective. </p>
           
+                  <p>We know that compliance and security are not often the first things that come to mind when creating new, innovative solutions. But embracing and internalizing these processes early and throughout your development cycle will ensure your project is cheaper, less confusing, and more secure in the long run. </p>
                   
-                  <a name="idea"></a>
-                  <h2 id="section-heading-h2">New System Idea</h2>
-                  <p>All new business needs and material changes to existing systems must complete the Initiate phase. During this period, business needs must be documented, and alternative solutions must be considered.</p>
-          
-                  <p>The Business Owner will collaborate with knowledgeable stakeholders about CMS infrastructure and existing assets to define and document the general business need or enhancement, and explore and document solution options. These stakeholders often include:</p>
-                  <ul>
+                  
+                  
+                  <a name="how"></a>
+                  <h3 id="section-heading-h3">How did we get here?</h3>
+                  <p>The <a href="https://www.cisa.gov/federal-information-security-modernization-act">Federal Information Security Management (FISMA) Act</a> was passed in 2002. FISMA requires all federal agencies to have information security plans in place to protect sensitive information. Since it’s passage, all agencies must have a set of processes and system controls designed to ensure the confidentiality, integrity, and availability of system-related information.</p>
 
-                    <li>Office of Information Technology (OIT) Navigators</li>
-                    <li> Governance Review Team (GRT)</li>
-                      <li>Governance Review Board (GRB)</li>
-                        <li>Enterprise Architecture (EA) Team</li>
-                          <li>Technical Review Board (TRB)</li>
-                            <li>Information Security and Privacy Group (ISPG)</li>
-                              <li>Various Subject Matter Experts (SMEs)</li>
-                    
+                  <a name="system"></a>
+                  <h3 id="section-heading-h2">What is a system?</h3>
+                  <p>A federal information system—"system"—is an integrated set of components for collecting, storing, and processing data. Systems provide information and knowledge in the form of digital products. Examples include giant platforms like Sharepoint and Salesforce, and smaller tools like Airtable and Mural. </p>
+
+                  <a name="system"></a>
+                  <h3 id="section-heading-h2">How does a system show it is secure?</h3>
+                  <p>Every system must go through the National Institute of Standard and Technology (NIST) <a href="https://atos.open-control.org/steps/">Risk Management Framework</a> before it can be used to process federal information. This process culminates in a signed Authority to Operate (ATO) being issued. </p>
+
+                  <a name="ato"></a>
+                  <h3 id="section-heading-h2">When to start working on an ATO?</h3>
+                  <p>Because the ATO process is a complex, multi-step process that will constrain the design and implementation of your system, you should start thinking about how it applies to your system <b>before</b> you begin designing and implementing it. Starting the ATO process after you’ve already invested in development can result in costly delays and painful rework. 
+                </p>
+
+                <a name="how"></a>
+                <h2 id="section-heading-h2">How to use this site</h2>
+              
+
+              <p>This site should be used <b>early and often</b> throughout your system development lifecycle, especially when you’re starting to consider a future project launch or feature release. This not only ensures the long-term protection of sensitive information, it also prevents costly, duplicative effort after the project’s completion.</p>
+
+              <p>To better understand and prepare for key points in the ATO process and align your system development lifecycle appropriately, it’s helpful to think about the ATO in phases:</p>
+
+              <ul>
+               <li> Initiate</li>
+               <li>  Develop and Assess</li>
+                <li>  Operate</li>
+                    <li>  Retire</li>
+                
+              </ul>
 
 
-                  </ul>
-
-<p>Before beginning a new ATO, Cloud Computing, i.e.: Platform-as-a-Service (PaaS), Software-as-a-Service (SaaS), and Infrastructure-as-a-Service (IaaS) solutions should be considered, and a determination made if existing CMS/HHS vehicles can be leveraged. An ISSO and CRA must be assigned at this stage to make an initial assessment of security risks and privacy considerations.</p>
-
-<a name="intake"></a>
-<h3 id="section-heading-h3">Complete EASi Intake Form</h2>
-<p>The Business Owner starts an intake form in the <a href="https://impl.easi.cms.gov/">Easy Access to System Information (EASi)</a> application to get a Lifecycle ID for their system. This is required for every CMS system. They may engage a Navigator to help them complete the form, or they may complete as much information as they have and submit the intake form themselves.</p>
-
-<p>Business components which do not have a Navigator may request that a Navigator from OIT be assigned to their project.</p>
-<p>If a Navigator is not requested/needed, the component can fulfill the duties of the Navigator, including submission of the intake form and all steps up to and including presentation to the GRB meeting including collaborative meetings with EA and the TRB, and the development of a Business Case including documentation of alternative solutions for consideration by the GRB.</p>
-
-<a name="consult"></a>
-<h3 id="section-heading-h3">Consult with Governance Review Team</h2>
+<p>While every project and process is unique, every successful ATO goes through these four basic phases to ensure that a system is secure and compliant. </p>
 
 
-<p>Submitting the intake form engages the GRT, who works with the Business Owner, the EA team, Navigator (if applicable), and SMEs to create a business case for their system. The resulting case includes pros, cons, and alternative options. If the Business Owner decides to move forward with the ATO, this iterative, collaborative process should result in a strong business case to present to the GRB. 
-</p>
+<a name="phases"></a>
+<h2 id="section-heading-h2">Phases</h2>
 
-<a name="present"></a>
-<h3 id="section-heading-h3">Present to the Governance Review Board</h2>
-<p>Once they have settled on a direction for their system, the Business Owner and/or their Navigator present their case. The presentation is reviewed by relevant SMEs followed by the GRB itself, which issues an assessment and provides one or more options for the Business Owner to pursue. </p>
 
-<a name="arch"></a>
-<h3 id="section-heading-h3">Complete Enterprise Architecture Activities</h2>
-  <p>Once the Business Owner selects their chosen path forward, they will work with EA to complete a Core System Information Form. EA will then issue a Lifecycle ID, which allows the project to be entered into the CMS FISMA Controls Tracking (CFACTS) system. The Lifecycle ID number will remain associated with the project for the duration of its lifecycle. </p>
 
-  <a name="pack"></a>
-  <h3 id="section-heading-h3">Create an Authorization Package</h2>
+<h3 id="section-heading-h2"><a href="initiate.html">Initiate</a></h3>
+<p>The Initiate phase documents the general business need that the system intends to address, and provides business owners with acceptable solutions.</p>
 
-    <p>CFACTS is a Government Risk and Compliance (GRC) tool used to track and manage the security and compliance of all CMS systems. Upon receipt of the Lifecycle ID number from EA, ISPG enters the system into CFACTS. </p>
+<p></p>This process relies heavily on the Business Owner, the Enterprise Architecture (EA) team, Navigator, Subject Matter Experts (SMEs), and the Governance Review Team (GRT) to develop, document, and evaluate potential options for development.</p>
 
-    <p>Going forward, the Business Owner and their team will work together with various stakeholders to complete the required ATO documentation in CFACTS. The specific documents required are based on many factors and vary from system to system, <b>but all projects should expect to provide information related to:</b></p>
+<p>Representatives from Security, Privacy, and Accessibility must be consulted by the project in the Initiate phase, and the Security Assessment and Authorization process begins.</p>
 
-    <ul>
-     
-      <li> Project management personnel and policies </li>
-        <li>Security and privacy documentation </li>
-          <li>Risk assessment and abatement </li>
-            <li>Contingency plans </li>
-              <li>Architecture diagrams </li>
-                <li>Hardware and software inventories </li>
-                  <li>Privacy impact assessments </li>
-                    <li>Vulnerability scanning documentation </li>
-                      <li>Open Plan of Action & Milestones (PO&AMs) </li>
-                        <li>TRB Letter </li>
-                          <li>Configuration and management </li>
-                            <li>Baseline security configurations </li>
-                              <li>Configuration compliance audits policies </li>
-                                <li>Maintenance and update policies </li>
-                                  <li>Compliance monitoring tool output </li>
-                                    <li>Malware protection </li>
-                                      <li>User ID conventions, group membership, and information system accounts for each component </li>
-                                        <li>Audit documentation </li>
-                                          <li>System procedures manual </li>
-                                            <li>Job descriptions and personnel policies </li>
-                                              <li>Physical access and remote work policies </li>
-                                                <li>Data Use and Service Level Agreements </li>
-                                                  <li>Source code </li>
-                                                    <li>And others  </li>
 
-    </ul>
+<h3 id="section-heading-h2"><a href="#">Develop and Access</a></h3>
+<p>The Develop and Access phase creates user stories or requirements, designs and develops the solution, deploys to a non-production environment, and tests for compliance with the requirements and CMS standards so that it is production-ready.</p>
 
-    <p>As you might imagine, collecting and entering all required information in CFACTS can take much time and resources. To avoid delays in your development process, it is important to start collecting your system documentation as soon as possible.</p>
 
-    <a name="cat"></a>
-    <h2 id="section-heading-h2">Categorize System Security</h2>
-    <p>Once all required documentation is entered into CFACTS, the team will work together to categorize the system. At the end of this process, the system will be categorized as either High, Medium, or Low risk, which will determine the required controls. In particular, they will determine whether it should be classified as a High Value Asset (HVA) System. HVAs require additional security measures due to their unique risks.</p>
+<h3 id="section-heading-h2"><a href="#">Operate</a></h3>
+<p>The Operate phase is to maintain steady production operations while ensuring that routine maintenance is performed and sound security practices are maintained.</p>
+<p>Upgrades, system software patches, hardware upgrades, and modifications to interfaces with other systems are all maintenance issues that must be supported throughout this phase. </p>
 
-    <p>In addition to risk level, the system's architecture, components and boundary is documented in CFACTS. The boundary separates what is part of the system from what is not. It is documented through network drawings, hardware and software inventories, and narrative explanation. </p>
-    <p>Based on everything provided, the system is assigned a baseline of controls. Together with the team, the ISSO will provide implementation details for each control. </p>
-   
-
+<h3 id="section-heading-h2"><a href="#">Retire</a></h3>
+<p>The Retire phase ensures compliance with Federal guidelines when retiring a government IT system. There are many aspects to consider such as records retention, information security, and investment close-out procedures.</p>
 
 
 
