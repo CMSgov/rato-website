@@ -86,6 +86,9 @@
             <a href="overview.html" class=""> Overview</a>
           </li>
           <li class="usa-nav__submenu-item">
+            <a href="rato.html" class=""> CMS Rapid ATO</a>
+          </li>
+          <li class="usa-nav__submenu-item">
                   <a href="types.html" class=""> Types of ATOs</a>
                 </li><li class="usa-nav__submenu-item">
                   <a href="roles.html" class=""> Important Roles</a>
@@ -273,143 +276,75 @@
                 <main class="usa-layout-docs__main desktop:grid-col-9 usa-prose usa-layout-docs" id="main-content">
                   <h1> Develop and Assess </h1>
           
-              
-                  <p>This is when the system is actually built, deployed and assessed for security and compliance. This includes documenting all components and implementing necessary controls, finalizing required Artifacts and supplemental documentation, and completing testing and assessments.  </p>
-                  
-                  <a name="design"></a>
-                 
-                  <p>
-                    This phase of the TLC is document heavy and requires inputs from many stakeholders. To minimize costly delays, each project should have a communication plan in place to ensure all parties are in the loop throughout the process. The plan should include all relevant points of contact, including:
-                    
-          <ul>
-              <li>CRA</li>
-              <li> Business Owner</li>
-              <li>Penetration (Pen) Test Coordinator</li>
-                <li>ISPG Adaptive Capabilities Testing (ACT) team</li>
-                    <li>Information System Security Officer (ISSO)</li>
-                        <li>System Developer and Maintainer (SDM)</li>
-                            <li>ISSO Contracting Support (ISSOCS)</li>
-                                <li>Privacy Subject Matter Expert (PSME)</li>
-
-          </ul>
-                
-          
-          <a name="design"></a>
-          <h3 id="section-heading-h3">Build and Deploy</h3>
-          
-          
-<p>Design and development is managed by the BO and project team. The TLC requires only a small set of artifacts, and specific methodologies are determined by the BO and team. All initiatives should follow best practices in development and Program Management. Typically, the project team will work with the CMS Cloud Services team to provision the different environments, such as development, implementation and production. As the system is developed and deployed, the project team should also move forward with documentation and other compliance activities.  </p>
-
-<p>Once the system is designed and developed, it is deployed in a non-production environment. It is tested for compliance with requirements and CMS standards. Everything must all comply with CMS Technical Reference Architecture (TRA) and meet security, privacy and accessibility standards before it is production ready. For more information, see the <a href="CMS Acceptable Risk Safeguards (ARS).">CMS Acceptable Risk Safeguards (ARS)</a>. 
-
-
-</p>
-
-<a name="define"></a>
-<h3 id="section-heading-h3">Define the Accreditation Boundary</h3>
-
-<p>Once a system is deployed its reach and components must be documented. The Accreditation Boundary includes all components of the system that must be authorized by CMS. It defines the system and sets it apart from other systems that it works with. </p>
-<p>The ISSO works with the project team to define the boundary according to CMS’s TRB three tier architecture. If the system is hosted in the CMS AWS cloud GSS, it can access and use approved templates to simplify the process. </p>
-
-<a name="imp"></a>
-<h3 id="section-heading-h3">Implement Controls</h3>
-
-
-<p>The Accreditation Boundary creates an inventory of all system components that will require security controls. A system may be able to inherit controls based on it’s hosting, platform, data center, and other variables, which can greatly ease the process. With the boundary established, the ISSO will start documenting all <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/InformationSecurity/Info-Security-Library-Items/ARS-31-Publication">ARS 3.1 security controls</a> in CFACTS, starting with any inheritable controls available.
-</p>
-
-<p>Implementing controls often involves conversations between the ISSO and project team, especially technical stakeholders, as well as a CRA. To minimize back-and-forth, all relevant stakeholders should be engaged and prepared to participate.  </p>
-
-
-<a name="system"></a>
-<h3 id="section-heading-h3">System Test Development</h3>
-
-<p>With all components documented and controls in CFACTS, it’s time for a system test. The purpose of a system test is to evaluate the end‐to‐end system specifications. This test validates the complete and fully integrated software product, and involves the full project team. </p>
-
-<a name="onboard"></a>
-<h3 id="section-heading-h3">Onboarding to Continuous Diagnostics and Mitigation (CDM) </h3>
-
-<p>The Cybersecurity and Infrastructure Security Agency (CISA) works with partners across government and the private sector to secure national infrastructure. A big part of this effort—the <a href="https://www.cisa.gov/cdm">Continuous Diagnostics and Mitigation (CDM)</a> program—is strengthening the cybersecurity of federal networks and systems.  </p>
-
-<p>As part of the ATO process, the ISSO onboards each system to CDM through three stages:</p>
-
-<ul>
-  <li>Stage 1: Data Center Assessment Engagement</li>
-  <li>Stage 2: Implement and integrate required capabilities</li>
-  <li>Stage 3: Data validation and verification</li>
-</ul>
-
-<a name="tier"></a>
-<h3 id="section-heading-h3">Complete Tier 1-3 Artifacts</h3>
-<p>As seen in section <a href="initiate.html">2.1 Initiate</a>, all systems require Tier 1 Artifacts. Based on the boundary and controls, they may also require additional documentation. The project team should work with their ISSO and CRA to determine which documentation is required for their system, and to upload it to CFACTS. </p>
-
-<a name="ready"></a>
-<h3 id="section-heading-h3">Readiness Review</h3>
-<p>Once all controls, Artifacts and additional documentation is in CFACTS, the ISSO and project team will review before the project formally moves to the assessment phase. The ISSO and project team set the timing for the required PenTest and ACT, the ISSO reaches out to the <a href="mailto:Norman.Brown@cms.hhs.gov">PenTest mailbox</a> and the <a href="mailto:ACT@cms.hhs.gov">ACT mailbox</a> to schedule the assessments. As the team works, the timeline and schedule should be shared with the CRA.
-</p>
-
-
-
-
-                 <a name="pen"></a>
-                 <h3 id="section-heading-h3">PenTest</h3>
-                 <p>A PenTest helps determine the security of a system by attempting to exploit vulnerabilities. To start the process, the ISSO emails the <a href="mailto:Norman.Brown@cms.hhs.gov">PenTest mailbox</a> to request an intake form and schedule a test. The PenTest coordinator will work with the ISSO and project team to fill out the intake form. The PenTest team will then arrange a meeting to discuss the process and inform the ISSO and Business Owner of what to expect. </p>
-                 <p>After the test, the PenTest team will notify the project team of any issues, and the team has a 25-day grace period for mitigation efforts. When the test results are finalized, the PenTest team uploads a completed CAAT spreadsheet to CFACTS and notifies all parties. The CISO mailbox is also notified that the CAAT spreadsheet is complete and available on CFACTS.</p>
-                 <p>To avoid delays, the project should contact a PenTest Coordinator to request the assessment at least 3 months before the ATO deadline. </p>
-
-   <a name="act"></a>
-                 <h3 id="section-heading-h3">ACT</h3>
-                 <p>The ACT program is the risk-based security assessment for CMS systems. To fulfill this requirement, the ISSO will work with the ACT team to create and complete an assessment plan. Once it is complete, the ACT Final Package will also be uploaded to CFACTS. </p>
-                 <p>The project team should also reach out to the ACT team at least 3 months before the ATO deadline to schedule an ACT assessment.</p>
-
-                 <a name="508"></a>
-                 <h3 id="section-heading-h3">508 Compliance</h3>
-                 <p>Section 508 of the Rehabilitation Act requires all federal systems to be accessible to people with disabilities. To ensure the system is accessible to all users, the project team should consider 508 accessibility compliance throughout design, development and deployment. Before sign-off, the system is required to meet all applicable 508 guidelines. </p>
-
-                 <a name="ato"></a>
-                 <h3 id="section-heading-h3">ATO </h3>
-                 <p><b>Phase Requirements</b></p>
-                 <ul>
-                     <li>Identify repository locations for development artifacts</li>
-                     <li>Meet security, privacy, and Section 508 requirements</li>
-                     <li>Update the TLC System Profile entry for the system</li>
-                 </ul>
-
-
-                 <a name="risk"></a>
-                 <h3 id="section-heading-h3">Managing Identified Risks </h3>
-                 <p>All information systems include some level of risk. An ATO is designed to document and manage risk, not eliminate it. Once the PenTest and ACT assessment identify risks, the ISSO will work with the project team and CRA to create a Plan of Action and Milestones (POA&M).</p>
-
-                 <a name="poa"></a>
-                 <h3 id="section-heading-h3">POA&Ms</h3>
-                 <p>Plan of Action and Milestones (POA&Ms) are high-level statements that describe how a team will address security weaknesses identified for their system. All federal systems must include POA&Ms  to mitigate findings identified during the PenTest and ACT assessment process. As indicated in the name, a POA&M includes a plan, the resources needed to accomplish the plan, milestones, and scheduled completion dates. For example, a POA&M to mitigate a vulnerability could be: 
-                </p>
-
-<ol>
-  <li>Contact the vendor </li>
-  <li>Download the patch  </li>
-  <li>Apply the patch in the next maintenance window </li>
-</ol>
-
-<p>The ISSO coordinates with the team to manage, remediate, and (if necessary) accept the risk of open POA&Ms.</p>
-
-
-
-<a name="atoreview"></a>
-<h3 id="section-heading-h3">ATO Review and Certification </h3>
-
-
-<p>With all aforementioned documentation and assessments completed and uploaded to CFACTS, the ISSO can now complete an <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/InformationSecurity/Info-Security-Library-Items/CMS-System-ATO-Request-Form">ATO Certification Form</a>. The form is submitted through ServiceNow, a tool that manages the tracking and approval for all relevant stakeholders. The CRA initiates the process for the CRA to create the ATO. </p>
-
-<p>The complete ATO package is reviewed by the CRA, ISSO, BO and ISPG. Once approved by ISPG, the package is submitted to the CISO and CIO for final approval. Once signed off by the CISO and CIO, an ATO letter is sent to the BO and ISSO. The CRA uploads the approved ATO package to CFACTS and notifies all relevant parties, including <a href="https://www.fedramp.gov/">FedRAMP</a>. </p> 
-
-<p>The system now officially has an ATO—”the authority to operate decision that culminates from the security authorization process of an information technology system in the US federal government." With a completed and approved ATO, the system officially moves into the Operate Phase of the TLC. </p>
-
-
-
-
-
-
+                  <p>This is when the system is actually built, deployed and assessed for security and compliance. This includes documenting all controls and implementing necessary controls, finalizing required Artifacts and supplemental documentation, and completing testing and assessments. </p>
+                  <p>This phase of the CMS <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/TLC">Target Life Cyle</a> (TLC) framework is document heavy and requires inputs from many stakeholders. To minimize costly delays, each project should have a communication plan in place to ensure all parties are in the loop throughout the process. The plan should include all relevant points of contact, including:</p>
+                  <ul>
+                  <li>CRA</li>
+                  <li>Business Owner</li>
+                  <li>Penetration (Pen) Test Coordinator</li>
+                  <li>ISPG Adaptive Capabilities Testing (ACT) team</li>
+                  <li>Information System Security Officer (ISSO)</li>
+                  <li>System Developer and Maintainer (SDM)</li>
+                  <li>ISSO Contracting Support (ISSOCS)</li>
+                  <li>Privacy Subject Matter Expert (PSME)</li>
+                  </ul>
+                  <h3><strong>Design, Develop &amp; Deploy</strong></h3>
+                  <p>Design and development is managed by the BO and project team. The TLC requires only a small set of artifacts, and specific methodologies are determined by the BO and team. All initiatives should follow best practices in development and Program Management. Typically, the project team will work with the CMS Cloud Services team to provision the different environments, such as development, implementation and production. As the system is developed, the project team should also move forward with documentation and other compliance activities. </p>
+                  <p>Once the system is designed and developed, it is deployed in a non-production environment. It is tested for compliance with requirements and CMS standards. Everything must all comply with CMS Technical Reference Architecture (TRA) and meet security, privacy and accessibility standards before it is production ready. For more information, see the <a href="https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/117_Systems_Security_MAC_ARS.pdf">CMS Acceptable Risk Safeguards (ARS). </a></p>
+                  <h3><strong>Define the Accreditation Boundary</strong></h3>
+                  <p>Once a system is deployed, its reach and components must be documented. The Accreditation Boundary includes all components of the system that must be authorized by CMS. It defines the system and sets it apart from other systems that it works with. </p>
+                  <p>The ISSO works with the project team to define the boundary according to the CMS TRB three tier architecture. If the system is hosted in the CMS AWS cloud GSS, it can access and use approved templates to simplify the process. </p>
+                  <h3><strong>Implement Controls</strong></h3>
+                  <p>The Accreditation Boundary creates an inventory of all system components that will require security controls. A system may be able to inherit controls based on its hosting, platform, data center, and other variables, which can greatly ease the process. With the boundary established, the ISSO will start documenting all <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/InformationSecurity/Info-Security-Library-Items/ARS-31-Publication">ARS 3.1 security controls</a> in CFACTS, starting with any inheritable controls available.</p>
+                  <p>Implementing controls often involves conversations between the ISSO and project team, especially technical stakeholders, as well as a CRA. To minimize back-and-forth, all relevant stakeholders should be engaged and prepared to participate. </p>
+                  <h3><strong>System Test Development</strong></h3>
+                  <p>With all components documented and controls in CFACTS, it&rsquo;s time for a system test. The purpose of a system test is to evaluate the end‐to‐end system specifications. This test validates the complete and fully integrated software product, and involves the full project team. </p>
+                  <h3><strong>Onboarding to Continuous Diagnostics and Mitigation (CDM)&nbsp;</strong></h3>
+                  <p>The Cybersecurity and Infrastructure Security Agency (CISA) works with partners across government and the private sector to secure national infrastructure. A big part of this effort&mdash;the <a href="https://www.cisa.gov/cdm">Continuous Diagnostics and Mitigation (CDM)</a> program&mdash;is strengthening the cybersecurity of federal networks and systems. </p>
+                  <p>As part of the ATO process, the ISSO onboards each system to CDM through three stages:</p>
+                  <ul>
+                  <li>Stage 1: Engage Data Center assessment</li>
+                  <li>Stage 2: Implement and integrate required capabilities</li>
+                  <li>Stage 3: Validate and verify data</li>
+                  </ul>
+                  <h3><strong>Complete Tier 1-3 Artifacts</strong></h3>
+                  <p>As seen in section<strong><em> 2.1 Initiate</em></strong>, all systems require Tier 1 Artifacts. Based on the boundary and controls, they may also require additional documentation. The project team should work with their ISSO and CRA to determine which documentation is required for their system and upload it to CFACTS. </p>
+                  <h3><strong>Readiness Review</strong></h3>
+                  <p>Once all controls, Artifacts and additional documentation are in CFACTS, the ISSO and project team will review the information before the project formally moves to the assessment phase. The ISSO and project team set the timing for the required PenTest and ACT, the ISSO reaches out to the <a href="mailto:Norman.Brown@cms.hhs.gov">PenTest mailbox</a> and the <a href="mailto:ACT@cms.hhs.gov">ACT mailbox</a> to schedule the assessments. As the team works, the timeline and schedule should be shared with the CRA.</p>
+                  <h3><strong>PenTest</strong></h3>
+                  <p>A PenTest helps determine the security of a system by attempting to exploit vulnerabilities. To start the process:&nbsp;</p>
+                  <ol>
+                  <li>The ISSO emails the <a href="mailto:Norman.Brown@cms.hhs.gov">PenTest mailbox</a> to request an intake form and schedule a test.&nbsp;</li>
+                  <li>The PenTest coordinator will work with the ISSO and project team to fill out the intake form.&nbsp;</li>
+                  <li>The PenTest team will then arrange a meeting to discuss the process and inform the ISSO and Business Owner of what to expect. </li>
+                  </ol>
+                  <p>After the test:&nbsp;</p>
+                  <ol>
+                  <li>The PenTest team will notify the project team of any issues.</li>
+                  <li>The team mitigates the issues within 25 days.&nbsp;</li>
+                  <li>When the test results are finalized, the PenTest team uploads a completed CAAT spreadsheet to CFACTS and notifies all parties.&nbsp;</li>
+                  <li>The CISO mailbox is also notified that the CAAT spreadsheet is complete and available on CFACTS.</li>
+                  </ol>
+                  <p>To avoid delays, the project should contact a PenTest Coordinator to request the assessment at least 3 months before the ATO deadline. </p>
+                  <h3><strong>ACT</strong></h3>
+                  <p>The ACT program is the risk-based security assessment for CMS systems. To fulfill this requirement, the ISSO emails the <a href="mailto:ACT@cms.hhs.gov">ACT mailbox</a> to request an intake form. The lSSO works with the project team to complete the intake form and with the ACT team to create and complete an assessment plan. Once it is complete, the ACT Final Package will also be uploaded to CFACTS. </p>
+                  <p>The project team should also reach out to the ACT team at least 3 months before the ATO deadline to schedule an ACT assessment.</p>
+                  <h3><strong>508 Compliance</strong></h3>
+                  <p>Section 508 of the Rehabilitation Act requires all federal systems to be accessible to people with disabilities. To ensure the system is accessible to all users, the project team should consider 508 accessibility compliance throughout design, development and deployment. Before approval, the system is required to meet all applicable 508 guidelines.<strong> <br /></strong></p>
+                  <h3><strong>Managing Identified Risks</strong></h3>
+                  <p>All information systems include some level of risk. An ATO is designed to document and manage risk, not eliminate it. Once the PenTest and ACT assessment identify risks, the ISSO will work with the project team and CRA to create a Plan of Action and Milestones (POA&amp;M).</p>
+                  <h3><strong>POA&amp;Ms</strong></h3>
+                  <p><a href="https://csrc.nist.gov/glossary/term/Plan_of_Action_and_Milestones">Plan of Action and Milestones (POA&amp;Ms)</a> are high-level statements that describe how a team will address security weaknesses identified for their system. <strong>All federal systems must include POA&amp;Ms&nbsp; to mitigate findings identified during the PenTest and ACT assessment process.</strong> As indicated in the name, a POA&amp;M includes a plan, the resources needed to accomplish the plan, milestones, and scheduled completion dates. For example, a POA&amp;M to mitigate a vulnerability could be:&nbsp;</p>
+                  <ol>
+                  <li>Contact the vendor&nbsp;</li>
+                  <li>Download the patch&nbsp;</li>
+                  <li>Apply the patch in the next maintenance window.</li>
+                  </ol>
+                  <p>The ISSO coordinates with the team to manage, remediate, and (if necessary) accept the risk of open POA&amp;Ms.</p>
+                  <h3><strong>ATO Review and Certification</strong></h3>
+                  <p>With all aforementioned documentation and assessments completed and uploaded to CFACTS, the ISSO can now complete an <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/InformationSecurity/Info-Security-Library-Items/CMS-System-ATO-Request-Form">ATO Certification Form</a>. The form is submitted through ServiceNow, a tool that manages the tracking and approval for all relevant stakeholders. The CRA initiates the process for the CRA to create the ATO. </p>
+                  <p>The complete ATO package is reviewed by the CRA, ISSO, BO and ISPG. Once approved by ISPG, the package is submitted to the CISO and CIO for final approval. Once approved by the CISO and CIO, an ATO letter is sent to the BO and ISSO. The CRA uploads the approved ATO package to CFACTS and notifies all relevant parties, including <a href="https://www.fedramp.gov/">FedRAMP</a>.&nbsp; </p>
+                  <p>The system now officially has an ATO&mdash;&rdquo; the authority to operate decision that culminates from the security authorization process of an information technology system in the US federal government." With a completed and approved ATO, the system officially moves into the <em>Operate Phase </em>of the TLC.&nbsp;</p>
 
 
 

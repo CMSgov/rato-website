@@ -80,10 +80,13 @@
    
    
             <ul class="usa-nav__primary usa-accordion"><li class="usa-nav__primary-item">
-        <button class="usa-accordion__button usa-nav__link  " aria-expanded="false" aria-controls="extended-nav-section-one"><span>ATO Overview</span></button>
+        <button class="usa-accordion__button usa-nav__link  usa-nav__link usa-current" aria-expanded="false" aria-controls="extended-nav-section-one"><span>ATO Overview</span></button>
         <ul id="extended-nav-section-one" class="usa-nav__submenu">
           <li class="usa-nav__submenu-item">
             <a href="overview.html" class=""> Overview</a>
+          </li>
+          <li class="usa-nav__submenu-item">
+            <a href="rato.html" class=""> CMS Rapid ATO</a>
           </li>
           <li class="usa-nav__submenu-item">
                   <a href="types.html" class=""> Types of ATOs</a>
@@ -92,7 +95,7 @@
                 </li></ul></li>
                 
                 <li class="usa-nav__primary-item">
-        <button class="usa-accordion__button usa-nav__link usa-current" aria-expanded="false" aria-controls="extended-nav-section-two"><span>Phases</span></button>
+        <button class="usa-accordion__button " aria-expanded="false" aria-controls="extended-nav-section-two"><span>Phases</span></button>
         <ul id="extended-nav-section-two" class="usa-nav__submenu">
          <!-- <li class="usa-nav__submenu-item">
             <a href="#" class=""> Preparation</a>
@@ -233,126 +236,123 @@
                   <h1> Important Roles</h1>
           
                   <h3><strong>Business Owner (BO)</strong></h3>
-                  <p><span style="font-weight: 400;">The BO is a CMS official (federal government employee). They are Group Directors or Deputy Group Directors, and they encounter the ATO process when they are building or implementing a system to address their business needs. BOs are not expected to be technical or security experts&mdash;but their participation and collaboration is critical to the success of the ATO.</span></p>
-                  <p><span style="font-weight: 400;">During an ATO, the BO works closely with technical and security stakeholders&mdash;particularly the ISSO&mdash;to ensure that the data and information in their system is properly documented and managed. Working with their team, the BO&rsquo;s responsibilities include, but are not limited to:</span></p>
-                  <h4><strong>Document and Protect PII and PHI</strong></h4>
-                  <ul>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Comply with the </span><a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/CIO-Directives-and-Policies/Downloads/POLICY_DL_InvestmentMgmt.pdf"><span style="font-weight: 400;">CMS Policy for IT Investment Management &amp; Governance</span></a></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Coordinate with the CRA and ISSO to identify the types of information their system processes, and document and manage any Personally Identifiable Information (PII) and Personal Health Information (PHI) in their system</span></li>
-                  <ul>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Ensure that CMS has the legal authority to conduct activities involving the collection, use, and disclosure of information</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Assign the appropriate security categorizations to the information system</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Determine the information security and privacy impacts&nbsp;</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Manage information security and privacy risk</span></li>
-                  </ul>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Work with the COs and CORs to determine the minimum necessary PII/PHI required to conduct the activity for which the agency is authorized</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Coordinate with the COs and CORs, Data Guardian, Program/Project Manager, the CISO, and the SOP to ensure appropriate information security and privacy contracting language from relevant sources is included into each IT contract. Relevant sources must include, but are not limited to:&nbsp;</span></li>
-                  <ul>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">HHS Office of the Assistant Secretary for Financial Resources (ASFR)&nbsp;</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">HHS Office of Grants and Acquisition Policy and Accountability (OGAPA)&nbsp;</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">CMS Office of Acquisition and Grants Management (OAGM)</span></li>
-                  </ul>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Coordinate with the CRA, ISSO and others to ensure compliance with the CMS ARS and the Internal Revenue Service (IRS) Publication 1075, Tax Information Security Guidelines for Federal, State and Local Agencies</span></li>
-                  </ul>
-                  <h4><strong>Manage CMS Data Privacy and Security</strong></h4>
-                  <ul>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Own and manage access to the information stored, processed, or transmitted in the system</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Manage and approve all use and disclosure of data from CMS programs or systems&nbsp;</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Verify that CMS&rsquo;s programs or systems only disclose the minimum data necessary</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Confirm adequate security and privacy controls are in place to protect CMS&rsquo;s systems</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Prepare Privacy Impact Assessments (PIAs) for programs or systems with the direction from the CRA</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Support the analysis of incidents involving PII and help determine the appropriate action to take for making notification of privacy breaches and reporting, monitoring, tracking, and closure of incidents</span></li>
-                  </ul>
-                  <h3><strong>Information System Security Officer (ISSO)</strong></h3>
-                  <p><span style="font-weight: 400;">The ISSO is either a CMS official (federal government employee) or a Contractor. They are the key connection between the BO and the CMS security apparatus. They work closely with the BO, the CRA and other stakeholders to move a system through the ATO process. <br /></span></p>
-                  <p><span style="font-weight: 400;">Before joining a project, an ISSO fills out an appointment letter, which is reviewed by the BO and signed-off by ISPG. Once an ISSO joins a project their responsibilities include, but are not limited to:&nbsp; <br /></span></p>
-                  <h4><strong>General Duties</strong></h4>
-                  <ul>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">For each system, the ISSO will coordinate with the Data Guardian, ISO, Business Owner, and CRA to:&nbsp;</span></li>
-                  <ul>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Identify the types of information processed&nbsp;</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Complete a Privacy Impact Assessment (PIA) that includes all privacy items that will be hosted in the system</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Ensure that CMS has the legal authority to conduct activities involving the collection, use, and disclosure of PII/PHI&nbsp;</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Assign the appropriate security categorizations to the information systems</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Determine the information security and privacy impacts&nbsp;</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Manage information security and privacy risk</span></li>
-                  </ul>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Report compliance on secure protocol use in websites periodically as defined within the CMS ARS</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Submit recommendations to the CRA for system configuration deviations from the required baseline</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Coordinate with the CIO, CISO, SOP, BO and others to ensure compliance with control family requirements on website usage, web measurement and customization technologies, and third-party websites and application</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Coordinate with the System Developer and Maintainer in identifying the information security and privacy controls for the system</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Document the controls and ensure they&nbsp; meet or exceed the minimal controls defined by CISO guidance&nbsp;</span></li>
-                  </ul>
-                  <h4><strong>Safeguard Privacy</strong></h4>
-                  <ul>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Coordinate with the BO, CRA and other stakeholders to meet all collection, creation, use, dissemination, retention, and maintenance requirements for sensitive information</span></li>
-                  </ul>
-                  <h4><strong>Assess and Authorize</strong></h4>
-                  <ul>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Maintain current system information in CFACTS (such as POCs and artifacts) to support requirements and processes</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Coordinate with the BO, ISO, and CISO to ensure that all system requirements are implemented and enforced</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Ensure identified anomalies and risks are addressed and remediated appropriately</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Evaluate the impact of network and system changes</span></li>
-                  </ul>
-                  <h4><strong>Duties across System Development Lifecycle</strong></h4>
-                  <p><strong>Initiation</strong></p>
-                  <ul>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Review and confirm that contracts include appropriate information security and privacy language</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Coordinate with Enterprise Architecture</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Ensure the system appears in CFACTS</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Work with the BO to draft a PIA</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Evaluate whether other privacy artifacts are required</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Complete System Security Categorization</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Identify system-specific, information security and privacy training needs</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Participate in governance and project reviews</span></li>
-                  </ul>
-                  <p><strong>Concept&nbsp;</strong></p>
-                  <ul>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Identify and discuss risk with the Program Manager and BO</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Identify any investment needs to ensure each system meets security and privacy requirements <br /></span></li>
-                  </ul>
-                  <p><strong>Planning</strong></p>
-                  <ul>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Develop a System Security Plan (SSP)</span></li>
-                  </ul>
-                  <h3><strong>System Developer (Developer)</strong></h3>
-                  <p>The Developer must be a CMS official (federal government employee). They are responsible for providing management and oversight to the contracted project team developing and maintaining the system. This includes working with the team to implement the security controls needed for an ATO. They work with the ISSO, project team, CMS Security Automation Framework, and the DevSecOps support team to help project teams build successful DevSecOps platforms and <a href="https://saf.cms.gov/#/faq#security-control-associations">secure system ecosystems</a>. </p>
-                  <p><span style="font-weight: 400;"><b>Their responsibilities include:</b></span></p>
-                  <ul>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Create, document, and implement information security- and privacy-related functional requirements to protect CMS information, systems, and processes. This includes:</span></li>
-                  <ul>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Ensure the requirements are effectively integrated into IT component products and systems</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Ensure the requirements are adequately planned and addressed in all aspects of system architecture</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Ensure automated information security and privacy capabilities are integrated and deployed as required</span></li>
-                  </ul>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Coordinate with the ISSO to identify the necessary information security and privacy controls for the system</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Follow the CMS System Development Lifecycle (SDLC) in developing and maintaining a system, including:&nbsp;</span></li>
-                  <ul>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Understand the relationships among the system's features and information security and privacy safeguards</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Ensure all development practices comply with the CMS TRA</span></li>
-                  </ul>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Execute the RMF tasks listed in NIST SP 800-37 and the RMH</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Ensure CMS systems or applications that share data for any purpose are capable of extracting data by pre-approved categories</span></li>
-                  <li style="font-weight: 400;"><span style="font-weight: 400;">Share only the minimum PII from CMS systems and applications that is necessary and relevant for the purposes it was originally collected</span></li>
-                  </ul>
-
-
-
-                  <h3><strong>Assessor</strong></h3>
-                  <p>The Assessor sits in an agency&rsquo;s Security team and is responsible for checking the compliance of systems. They validate and verify that documented controls work using the assessment cases. AT CMS this service is offered and funded to all new systems by the Adaptive Control Testing (ACT) group.</p>
-                  <h3><strong>Authorizing Official (AO)</strong></h3>
-                  <p>The AO is responsible for the overall impact categorization and risk acceptance. They determine if the risk of operating the system is acceptable, and if so, issuing an Authority to Operate (ATO) for that system. They often designate this responsibility to one or more other people. At most federal agencies this role is performed by the Chief Information Officer (CIO).</p>
-                  <h3><strong>Penetration Tester (PenTester)</strong></h3>
-                  <p>PenTesters test the security of a system by attempting to exploit vulnerabilities. They work with ISSOs and project teams to set and document the Rules of Engagement (RoE). They then assess the system according to those terms and issue a findings report. At CMS this service is offered and funded by the CMS Cybersecurity Integration Center (CCIC).</p>
-                  <h3><strong>Program / Project Team</strong></h3>
-                  <p>Those who are trying to build/launch the system.</p>
-                  <h3><strong>System Owner</strong></h3>
-                  <p>The system owner is usually the product lead or tech lead of the project team. They will be named in the ATO documents and are the main contact during the evaluation process that leads up to an ATO.</p>
-                  <h3><strong>Enterprise Architecture and Data Group (EA)</strong></h3>
-                  <p>Every federal agency is required to develop Enterprise Architecture to guide information technology investments. The CMS EA Group is located in the Office of Information Technology (OIT), and it works to help document all information system architecture at the agency. This includes working with project teams to provide the documentation required for an ATO.</p>
-                  <h3><strong>Governance Review Team (GRT)</strong></h3>
-                  <p>The Governance Review Team is a key stakeholder group during the Initiate Phase of the ATO process. It helps project teams determine if there is the need to build a new system, and to work through the IT governance process. </p>
-                  <p>The GRT directs project teams to available resources, advises them on how to properly develop and document their business case, and analyzes potential existing solutions at CMS. Based on these discussions, the GRT makes recommendations to the Governance Review Board (GRB) about whether to move forward with developing a new system.&nbsp;</p>
+<p>The BO is a CMS official (federal government employee). They are Group Directors or Deputy Group Directors, and they encounter the ATO process when they are building or implementing a system to address their business needs. BOs are not expected to be technical or security experts&mdash;but their participation and collaboration is critical to the success of the ATO.</p>
+<p>During an ATO, the BO works closely with technical and security stakeholders&mdash;particularly the ISSO&mdash;to ensure that the data and information in their system is properly documented and managed. Working with their team, the BO&rsquo;s responsibilities include, but are not limited to:</p>
+<h4><strong>Document and Protect PII and PHI</strong></h4>
+<ul>
+<li>Comply with the the <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/CIO-Directives-and-Policies/Downloads/POLICY_DL_InvestmentMgmt.pdf">CMS Policy for IT Investment Management &amp; Governance</a></li>
+<li>Coordinate with the CRA and ISSO to identify the types of information their system processes, and document and manage any Personally Identifiable Information (PII) and Personal Health Information (PHI) in their system</li>
+<ul>
+<li>Ensure that CMS has the legal authority to conduct activities involving the collection, use, and disclosure of information</li>
+<li>Assign the appropriate security categorizations to the information system</li>
+<li>Determine the information security and privacy impacts&nbsp;</li>
+<li>Manage information security and privacy risk</li>
+</ul>
+<li>Work with the COs and CORs to determine the minimum necessary PII/PHI required to conduct the activity for which the agency is authorized</li>
+<li>Coordinate with the COs and CORs, Data Guardian, Program/Project Manager, the CISO, and the SOP to ensure appropriate information security and privacy contracting language from relevant sources is included into each IT contract. Relevant sources must include, but are not limited to:&nbsp;</li>
+<ul>
+<li>HHS Office of the Assistant Secretary for Financial Resources (ASFR)&nbsp;</li>
+<li>HHS Office of Grants and Acquisition Policy and Accountability (OGAPA)&nbsp;</li>
+<li>CMS Office of Acquisition and Grants Management (OAGM)</li>
+</ul>
+<li>Coordinate with the CRA, ISSO and others to ensure compliance with the CMS ARS and the Internal Revenue Service (IRS) Publication 1075, Tax Information Security Guidelines for Federal, State and Local Agencies</li>
+</ul>
+<h4><strong>Manage CMS Data Privacy and Security</strong></h4>
+<ul>
+<li>Own and manage access to the information stored, processed, or transmitted in the system</li>
+<li>Manage and approve all use and disclosure of data from CMS programs or systems&nbsp;</li>
+<li>Verify that CMS programs and systems only disclose the minimum data necessary</li>
+<li>Confirm adequate security and privacy controls are in place to protect CMS systems</li>
+<li>Prepare Privacy Impact Assessments (PIAs) for programs or systems with the direction from the CRA</li>
+<li>Support the analysis of incidents involving PII and help determine the appropriate action to take for making notification of privacy breaches and reporting, monitoring, tracking, and closure of incidents</li>
+</ul>
+<h3><strong>Information System Security Officer (ISSO)</strong></h3>
+<p>The ISSO is either a CMS official (federal government employee) or a Contractor. They are the key connection between the BO and the CMS security apparatus. They work closely with the BO, the CRA and other stakeholders to move a system through the ATO process. </p>
+<p>Before joining a project, an ISSO fills out an appointment letter, which is reviewed by the BO and signed-off by ISPG. Once an ISSO joins a project their responsibilities include, but are not limited to:&nbsp; </p>
+<h4><strong>General Duties</strong></h4>
+<ul>
+<li>For each system, the ISSO will coordinate with the Data Guardian, ISO, Business Owner, and CRA to:&nbsp;</li>
+<ul>
+<li>Identify the types of information processed&nbsp;</li>
+<li>Complete a Privacy Impact Assessment (PIA) that includes all privacy items that will be hosted in the system</li>
+<li>Ensure that CMS has the legal authority to conduct activities involving the collection, use, and disclosure of PII/PHI&nbsp;</li>
+<li>Assign the appropriate security categorizations to the information systems</li>
+<li>Determine the information security and privacy impacts&nbsp;</li>
+<li>Manage information security and privacy risk</li>
+</ul>
+<li>Report compliance on secure protocol use in websites periodically as defined within the CMS ARS</li>
+<li>Submit recommendations to the CRA for system configuration deviations from the required baseline</li>
+<li>Coordinate with the CIO, CISO, SOP, BO and others to ensure compliance with control family requirements on website usage, web measurement and customization technologies, and third-party websites and application</li>
+<li>Coordinate with the System Developer and Maintainer in identifying the information security and privacy controls for the system</li>
+<li>Document the controls and ensure they&nbsp; meet or exceed the minimal controls defined by CISO guidance&nbsp;</li>
+</ul>
+<h4><strong>Safeguard Privacy</strong></h4>
+<ul>
+<li>Coordinate with the BO, CRA and other stakeholders to meet all collection, creation, use, dissemination, retention, and maintenance requirements for sensitive information</li>
+</ul>
+<p><strong>Assess and Authorize</strong></p>
+<ul>
+<li>Maintain current system information in CFACTS (such as POCs and artifacts) to support requirements and processes</li>
+<li>Coordinate with the BO, ISO, and CISO to ensure that all system requirements are implemented and enforced</li>
+<li>Ensure identified anomalies and risks are addressed and remediated appropriately</li>
+<li>Evaluate the impact of network and system changes</li>
+</ul>
+<h4><strong>Duties across System Development Lifecycle</strong></h4>
+<p><strong>Initiation</strong></p>
+<ul>
+<li>Review and confirm that contracts include appropriate information security and privacy language</li>
+<li>Coordinate with Enterprise Architecture</li>
+<li>Ensure the system appears in CFACTS</li>
+<li>Work with the BO to draft a PIA</li>
+<li>Evaluate whether other privacy artifacts are required</li>
+<li>Complete System Security Categorization</li>
+<li>Identify system-specific, information security and privacy training needs</li>
+<li>Participate in governance and project reviews</li>
+</ul>
+<p><strong>Concept&nbsp;</strong></p>
+<ul>
+<li>Identify and discuss risk with the Program Manager and BO</li>
+<li>Identify any investment needs to ensure each system meets security and privacy requirements </li>
+</ul>
+<p><strong>Planning</strong></p>
+<ul>
+<li>Develop a System Security Plan (SSP)</li>
+</ul>
+<h3><strong>System Developer (Developer)</strong></h3>
+<p>The Developer must be a CMS official (federal government employee). They are responsible for providing management and oversight to the contracted project team developing and maintaining the system. This includes working with the team to implement the security controls needed for an ATO. They work with the ISSO, project team, CMS Security Automation Framework, and the DevSecOps support team to help project teams build successful DevSecOps platforms and <a href="https://saf.cms.gov/#/faq#security-control-associations">secure system ecosystems</a>. </p>
+<p><strong>Their responsibilities include the following:</strong></p>
+<ul>
+<li>Create, document, and implement information security- and privacy-related functional requirements to protect CMS information, systems, and processes. This includes:</li>
+<ul>
+<li>Ensure the requirements are effectively integrated into IT component products and systems</li>
+<li>Ensure the requirements are adequately planned and addressed in all aspects of system architecture</li>
+<li>Ensure automated information security and privacy capabilities are integrated and deployed as required</li>
+</ul>
+<li>Coordinate with the ISSO to identify the necessary information security and privacy controls for the system</li>
+<li>Follow the CMS System Development Lifecycle (SDLC) in developing and maintaining a system, including:&nbsp;</li>
+<ul>
+<li>Understand the relationships among the system's features and information security and privacy safeguards</li>
+<li>Ensure all development practices comply with the CMS TRA</li>
+</ul>
+<li>Execute the RMF tasks listed in NIST SP 800-37 and the RMH</li>
+<li>Ensure CMS systems or applications that share data for any purpose are capable of extracting data by pre-approved categories</li>
+<li>Share only the minimum PII from CMS systems and applications that is necessary and relevant for the purposes it was originally collected</li>
+</ul>
+<h3><strong>Assessor</strong></h3>
+<p>The Assessor sits on an agency&rsquo;s Security team and is responsible for checking the compliance of systems. They validate and verify that documented controls work using the assessment cases. At CMS, this service is offered and funded to all new systems by the Adaptive Control Testing (ACT) group.</p>
+<h3><strong>Authorizing Official (AO)</strong></h3>
+<p>The AO is responsible for the overall impact categorization and risk acceptance. They determine if the risk of operating the system is acceptable, and if so, issuing an Authority to Operate (ATO) for that system. They often designate this responsibility to one or more other people. At most federal agencies this role is performed by the Chief Information Officer (CIO).</p>
+<h3><strong>Penetration Tester (PenTester)</strong></h3>
+<p>PenTesters test the security of a system by attempting to exploit vulnerabilities. They work with ISSOs and project teams to set and document the Rules of Engagement (RoE). They then assess the system according to those terms and issue a findings report. At CMS, this service is offered and funded by the CMS Cybersecurity Integration Center (CCIC).</p>
+<h3><strong>Program / Project Team</strong>&nbsp;</h3>
+<p>Those who are trying to build/launch the system.</p>
+<h3><strong>System Owner</strong>&nbsp;</h3>
+<p>The system owner is usually the product lead or tech lead of the project team. They will be named in the ATO documents and are the main contact during the evaluation process that leads up to an ATO.</p>
+<h3><strong>Enterprise Architecture and Data Group (EA)</strong></h3>
+<p>Every federal agency is required to develop Enterprise Architecture to guide information technology investments. The CMS EA Group is located in the Office of Information Technology (OIT), and it works to help document all information system architecture at the agency. This includes working with project teams to provide the documentation required for an ATO. </p>
+<h3><strong>Governance Review Team (GRT)</strong></h3>
+<p>The Governance Review Team is a key stakeholder group during the Initiate Phase of the ATO process. It helps project teams determine if there is the need to build a new system, and to work through the IT governance process. </p>
+<p>The GRT directs project teams to available resources, advises them on how to properly develop and document their business case, and analyzes potential existing solutions at CMS. Based on these discussions, the GRT makes recommendations to the Governance Review Board (GRB) about whether to move forward with developing a new system.</p>
 
 
 

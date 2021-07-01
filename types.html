@@ -86,6 +86,10 @@
             <a href="overview.html" class=""> Overview</a>
           </li>
           <li class="usa-nav__submenu-item">
+            <a href="rato.html" class=""> CMS Rapid ATO</a>
+          </li>
+
+          <li class="usa-nav__submenu-item">
                   <a href="types.html" class=""> Types of ATOs</a>
                 </li><li class="usa-nav__submenu-item">
                   <a href="roles.html" class=""> Important Roles</a>
@@ -137,15 +141,24 @@
             <ul class="usa-sidenav">
               
              <li class="usa-sidenav__item">
-              <a href="types.html" class="usa-current">Types of ATOs</a><ul class="usa-sidenav__sublist">
+              <a href="types.html" class="usa-current">Types of ATOs and security agreements </a><ul class="usa-sidenav__sublist">
                 <li class="usa-sidenav__item">
-              <a href="">New</a>
+              <a href="">Long Term ATO</a>
             </li><li class="usa-sidenav__item">
+              <a href="">Short Term ATO</a>
+            </li><li class="usa-sidenav__item">
+              <a href="">Authority to Pilot</a>
+            </li><li class="usa-sidenav__item">
+              <a href="">Risk-Based Determinations</a>
+            </li>
+            <li class="usa-sidenav__item">
+              <a href="">ISA and MOU Agreements</a>
+            </li>
+            <li class="usa-sidenav__item">
               <a href="">Re-Authorization</a>
-            </li><li class="usa-sidenav__item">
+            </li>
+            <li class="usa-sidenav__item">
               <a href="">Renewal</a>
-            </li><li class="usa-sidenav__item">
-              <a href="">OATO</a>
             </li>
               </ul>
             </li>
@@ -157,25 +170,70 @@
                 </div>
           
                 <main class="usa-layout-docs__main desktop:grid-col-9 usa-prose usa-layout-docs" id="main-content">
-                  <h1>Page heading (h1)</h1>
-          
-                  <p class="usa-intro">The page heading communicates the main focus of the page. Make your page heading descriptive and keep it succinct.</p>
-          
-                  <h2 id="section-heading-h2">Section heading (h2)</h2>
-          
-                  <p>These headings introduce, respectively, sections and subsections within your body copy. As you create these headings, follow the same guidelines that you use when writing section headings: Be succinct, descriptive, and precise.</p>
-          
-                  <h3 id="section-heading-h3">Subsection heading (h3)</h3>
-          
-                  <p>The particulars of your body copy will be determined by the topic of your page. Regardless of topic, it’s a good practice to follow the inverted pyramid structure when writing copy: Begin with the information that’s most important to your users and then present information of less importance.</p>
-          
-                  <p>Keep each section and subsection focused — a good approach is to include one theme (topic) per section.</p>
-          
-                  <h4 id="section-heading-h4">Subsection heading (h4)</h4>
-          
-                  <p>Use the side navigation menu to help your users quickly skip to different sections of your page. The menu is best suited to displaying a hierarchy with one to three levels and, as we mentioned, to display the sub-navigation of a given page.</p>
-          
-                  <p>Read the full documentation on our side navigation on the component page.</p>
+                  <h1>Types of ATOs and security agreements  </h1>
+                  <p>Every system that is integrated at CMS&mdash;either built in-house or contracted&mdash;must get an ATO. This ensures that the agency is aware of all components interacting with its data, and that each system can be monitored for compliance and risk mitigation. This helps safeguard sensitive personal information, manage the risk to critical infrastructure, and address cybersecurity issues when they arise. </p>
+                  <p>If you are introducing a new system at CMS, you must go through the ATO process. </p>
+                  <p>CMS also knows that every system is unique and that a one-size-fits-all approach won&rsquo;t work. This page outlines the different types of ATOs and other security options provided by CMS to manage agency-wide risk.&nbsp;</p>
+                  <h3><strong>Long Term ATO (3 Years)&nbsp;</strong></h3>
+                  <p>A 3-year ATO, or a Long Term ATO, is the longest-term compliance approval available at CMS. It is awarded by the CMS Authorization Official (AO) to systems that meet requisite security requirements. </p>
+                  <p>To receive a Long Term ATO, the system's authorization package must include all (or almost all) control documentation requirements and assessment results, including:</p>
+                  <ul>
+                  <li>&nbsp;All core security documentation&nbsp;</li>
+                  <li>&nbsp;Most (if not all) findings from PenTest and ACT test have been identified, documented, and remediated</li>
+                  </ul>
+                  <p>Before approval, the system's CRA will present a high-level executive summary to the AO in an official approval meeting. They explain the completed tasks and any remaining residual risk presented by the system. For the AO to provide a 3-year ATO the residual risk must be minimal. Things they look to confirm before approval:</p>
+                  <ul>
+                  <li>Most control assessment statuses are "Passed" in CFACTs&nbsp;</li>
+                  <li>CMS and HHS have approved the Privacy Impact Assessment</li>
+                  <li>Core documentation such as SSP, RA, CP, CP test, ACT PIA are up to date</li>
+                  <li>All (or almost all) POA&amp;Ms have been remediated (a few low POA&amp;Ms may still remain)</li>
+                  <li>The POA&amp;Ms summary shows remediation from several sources, such as ACA, ACT, PenTest, etc.</li>
+                  <li>The ongoing POA&amp;Ms summary status should be at minimum risk (typically 0)</li>
+                  <li>No critical or high risks have a status of ongoing or delayed (though a few low risks may have an ongoing or delayed status)</li>
+                  </ul>
+                  <h3><strong>Short Term ATO (6 months to 1 year)</strong></h3>
+                  <p>In some cases the AO is not able to issue a Long Term ATO, but there is reason to allow the system to operate under a Short Term ATO. Most Short Term ATOs are issued due to temporary inhibitors, such as:</p>
+                  <ul>
+                  <li>Security patches are not available from the vendor yet</li>
+                  <li>Challenges with modernization such as transition to the cloud issues</li>
+                  <li>Funding issues such as contracting transition or awaiting for more resources</li>
+                  </ul>
+                  <p>The AO may also choose to issue a Short Term ATO to allow a system to operate while the team addresses more significant limitations. These often include critical, high or moderate findings identified by assessments, and remediation challenges.</p>
+                  <p>In this scenario, the CRA will present the residual risk to the AO and&mdash;depending on the criticality of the risks and the time to remediate&mdash;the AO can provide a limited time for the project team to address the findings. Once addressed, assessors must retest to ensure the findings are mitigated. </p>
+                  <p>Once the Short Term ATO expires, the project team will update their mitigation efforts and work with the CRA to present for a second authorization. If the system risk has been sufficiently addressed, the AO can then issue a Long Term ATO.&nbsp; </p>
+                  <h3><strong>Authority to Pilot</strong></h3>
+                  <p>CMS takes cybersecurity and compliance very seriously. However, the agency also recognizes that the ATO process requires resources and could stifle innovation&mdash;or worse, incentivize non-compliance. To encourage innovation, experimentation and compliance, CMS recently introduced the Authority to Pilot (ATP) program to allow Business Owners (BO) to test a solution before getting an ATO. </p>
+                  <p>The goal of ATP is to help ISPG collect as much risk maturity information about the system from the BO as possible. To do so, the BO works with ISPG to complete a risk assessment. Based on the results and a letter of intent, the AO can provide a very short amount of time for the BO to test-run the system. </p>
+                  <p>&nbsp;The ATP initiative is gaining maturity. However, now every applicant is tested and assessed on a case-by-case basis. To provide much needed clarity and direction to customers, ISPG is creating a formal policy, standards and guidelines for the ATP program. Additionally, due to inherent risk, solutions that will host Personal Health Information (PHI) and/or Personally Identifiable Information (PII) are unlikely to receive an ATP.</p>
+                  <h3><strong>Risk-Based Determinations (RBD)</strong></h3>
+                  <p>When assessors determine a system has an unacceptable amount of risk, they can assign a Plan of Actions and Milestones (POA&amp;Ms) to remediate the risk. For many reasons, sometimes it is difficult for a system to complete the POA&amp;M completely. To address these situations and allow the system to operate, CMS has the Risk Based Determination (RBD) process. </p>
+                  <p>RBD allows ISSOs and BOs to present some level of risk management when POA&amp;Ms can't be remediated completely. This only applies to POA&amp;Ms that cannot be remediated due to technology or funding limitations. </p>
+                  <p>After being documented in CFACTs by the ISSO and signed by the BO, the RBD is sent to the CRA to present to the AO. Once the AO approves the RBD, the ISSO uploads it to each open POA&amp;Ms, regardless of their status. Only in special circumstances can POA&amp;Ms be finalized and closed out leveraging just the RBD.</p>
+                  <h3><strong>ISA and MOU Agreements</strong></h3>
+                  <p>Many systems share data with other systems within CMS and across different agencies. To safeguard the data they communicate, it often makes sense for connected systems to enter into security agreements. The two most used agreements at CMS are the Interconnection Security Agreement (ISA) and the Memorandum of Understanding (MOU). These high-level agreements support the best security posture to protect the data shared by systems across organizations. </p>
+                  <p>The agreements, provided by CMS as templates, are used to ensure the CMS data is protected. They are not legal documents, but they can't be altered without the approval of CMS legal counsel. Both templates are similar&mdash;the difference between the two is that the MOU is used between two or more systems approved under the same AO at CMS. An ISA requires the approval of the CMS AO and the AO of the other organization(s). </p>
+                  <p>Once all parties sign the agreements, the CRA for the system presents the documents to the AO for approval. Once approved, the agreement is uploaded to CFACTs.</p>
+                  <h3><strong>Re-Authorization</strong></h3>
+                  <p>Your system may need to be reassessed and re-authorized if your application team is planning to make significant changes, such as changes to:</p>
+                  <ul>
+                  <li>System security boundary</li>
+                  <li>Encryption methodologies</li>
+                  <li>Administrative functionality within the application</li>
+                  <li>The kinds of information you store (for example, <a href="https://atos.open-control.org/categorization/#pii">personally identifiable information (PII)</a>)</li>
+                  <li>The external services used or how/what data flows to/from them</li>
+                  </ul>
+                  <p>Example changes that do <em>not</em> require re-authorization, as long as they don&rsquo;t include the above:</p>
+                  <ul>
+                  <li>Features</li>
+                  <li>Bug fixes</li>
+                  <li>Interface changes</li>
+                  <li>Documentation updates</li>
+                  </ul>
+                  <p>The Authorizing Official determines whether a system needs re-authorization. If you&rsquo;re planning a change that you think may require re-authorization, contact them.</p>
+                  <h3><strong>Renewal</strong></h3>
+                  <p>Many ATOs are issued with a time limit, often this expiration is between one and three years. When an ATO nears expiration, you&rsquo;ll need the ATO to be renewed. </p>
+                  <p>&nbsp;</p>
+                  
                 </main>
               </div>
             </div>
