@@ -83,14 +83,18 @@
         <button class="usa-accordion__button usa-nav__link usa-current " aria-expanded="false" aria-controls="extended-nav-section-one"><span>ATO Overview</span></button>
         <ul id="extended-nav-section-one" class="usa-nav__submenu">
           <li class="usa-nav__submenu-item">
-            <a href="overview.html" class=""> Overview</a>
+            <a href="overview.html" class=""> Background</a>
           </li>
+
+                 
           <li class="usa-nav__submenu-item">
             <a href="rato.html" class=""> CMS Rapid ATO</a>
           </li>
 
           <li class="usa-nav__submenu-item">
-                  <a href="types.html" class=""> Types of ATOs</a>
+                  <a href="types.html" class=""> Compliance Authorizations </a>
+
+                 
                 </li><li class="usa-nav__submenu-item">
                   <a href="roles.html" class=""> Key Roles & Stakeholders</a>
                 </li></ul></li>
@@ -141,19 +145,30 @@
             <ul class="usa-sidenav">
               
              <li class="usa-sidenav__item">
-              <a href="types.html" class="usa-current">Overview</a><ul class="usa-sidenav__sublist">
+              <a href="types.html" class="usa-current">Background</a><ul class="usa-sidenav__sublist">
                 <li class="usa-sidenav__item">
-                    <a href="" class="">How to use this site</a><ul class="usa-sidenav__sublist">
+                    <a href="" class="">What is a system</a><ul class="usa-sidenav__sublist">
                      
                   
               </ul>
             </li>
 
             <li class="usa-sidenav__item">
-                <a href="" class="">Phases</a><ul class="usa-sidenav__sublist">
+                <a href="" class="">Why do you need an ATO</a><ul class="usa-sidenav__sublist">
                  
               </ul>
             </li>
+
+            <li class="usa-sidenav__item">
+              <a href="" class="">When to start working on an ATO</a><ul class="usa-sidenav__sublist">
+               
+            </ul>
+          </li>
+          <li class="usa-sidenav__item">
+            <a href="" class="">How to use this site</a><ul class="usa-sidenav__sublist">
+             
+          </ul>
+        </li>
 
             
             </ul>
@@ -162,61 +177,44 @@
                 </div>
           
                 <main class="usa-layout-docs__main desktop:grid-col-9 usa-prose usa-layout-docs" id="main-content">
-                  <h1>Overview</h1>
+                  <h1>Background</h1>
+                  <h3>From Waterfall to Iterative Security Planning
+                  </h3>
           
-                  <p>Every information system that integrates with CMS (or any Federal IT) must get an <strong>Authority to Operate (ATO)</strong>. In addition to meeting compliance requirements, this helps manage risk and safeguard vital information.</p>
-                  <p>The goal of this site is to provide the CMS Security and Privacy community&mdash;and anyone planning to implement technology and innovate at CMS&mdash;with the information and best practices needed to launch and maintain software from a technical and compliance perspective.</p>
-                  <p>We know that compliance and security are not often the first things that come to mind when creating new, innovative solutions. But preparing for, embracing and internalizing these processes early and throughout your development cycle will help your project navigate the system and address requirements more efficiently.</p>
+                  
+                 <p>Using the old waterfall process, getting an ATO can take 9-18 months and cost $600,000-$1.5 million. That is a significant amount of resources that could be used actually developing the system. </p> 
+
+                 <p>Planning for, embracing and internalizing security and compliance early and throughout the development cycle will help your project navigate the system and address requirements more efficiently. This is the goal of the Rapid ATO initiative.</p> 
+                  
+                 <p>By educating and preparing stakeholders, embracing iterative security planning and automating aspects of the ATO process, Rapid ATO will lower costs and shorten timelines required to achieve authorization. This will make CMS more secure and encourage more innovation at the agency. </p> 
+                  
+
+
+
+
+
+
                   <h3><strong>How did we get here?</strong></h3>
                   <p>The <a href="https://www.cisa.gov/federal-information-security-modernization-act">Federal Information Security Management (FISMA) Act</a> was passed in 2002. FISMA requires all federal agencies to have information security plans in place to protect sensitive information. Since its enactment, all agencies must have a set of processes and system controls designed to ensure the confidentiality, integrity, and availability of <em>system</em>-related information.</p>
                   <h3><strong>What is a system?</strong></h3>
-                  <p>A federal information system&mdash;"system"&mdash;is composed of components for collecting, storing, and processing data. This includes all hardware, software, humans and processes associated with developing, deploying, administrating, and maintaining the application. Systems provide information and knowledge in the form of digital products. Examples include giant platforms like Sharepoint and Salesforce, and smaller tools like Airtable and Mural.</p>
-                  <h3><strong>How does a system show it is secure?</strong></h3>
-                  <p>Before a system can be deployed into production, the federal agency must issue an Authority to Operate (ATO). The process used to obtain ATO is the National Institute of Standard and Technology (NIST) <a href="https://atos.open-control.org/steps/">Risk Management Framework</a>.</p>
-                  <h3><strong>When to start working on an ATO?</strong></h3>
-                  <p>Because the ATO process is a complex, multi-step process that will impact the design and implementation of your system, you should start thinking about how it applies to your system <strong><em>before</em></strong> you begin designing and implementing it. Starting the ATO process after you&rsquo;ve already invested in development can result in costly delays and painful rework.</p>
-                  <h3><strong>How to use this site?</strong></h3>
-                  <p>This site should be used<strong> early and often </strong>throughout your system development lifecycle, especially when you&rsquo;re starting to consider a future project launch or feature release. This not only ensures the long-term protection of sensitive information but also prevents costly, duplicative effort after the project&rsquo;s completion.</p>
-                  <p>To better understand and prepare for key points in the ATO process and align your system development lifecycle appropriately, it&rsquo;s helpful to think about the ATO in phases:</p>
-                  <ol>
-                  <li>Initiate</li>
-                  <li>Develop and Assess</li>
-                  <li>Operate</li>
-                  <li>Retire</li>
-                  </ol>
-                  <h3>Phases</h3>
-                  <h4><strong>1. Initiate</strong></h4>
-                  <p>The Initiate phase documents the general business need that the system intends to address, and provides Business Owners with available, CMS-validated solutions. If there is not an existing solution at CMS and a new one has to be implemented, a Lifecyle ID is assigned to the project and the Security Assessment and Authorization process begins.</p>
-                  <p>To develop, document, and evaluate potential options for development, this process relies heavily on these key personnel:&nbsp;</p>
-                  <ul>
-                  <li>Business Owner</li>
-                  <li>Enterprise Architecture (EA) team&nbsp;</li>
-                  <li>OIT Navigators</li>
-                  <li>Subject Matter Experts (SMEs)</li>
-                  <li>Governance Review Team (GRT)&nbsp;</li>
-                  </ul>
-                  <ul>
-                  <li>Representatives from Security, Privacy, and Accessibility (for consultation)</li>
-                  </ul>
-                  <h4><strong>2. Develop and Access</strong></h4>
-                  <p>The Develop and Access phase creates user stories or requirements, designs and develops the solution, deploys to a non-production environment, and tests for compliance with the requirements and CMS standards so that it is production-ready.</p>
-                  <h4><strong>3. Operate</strong></h4>
-                  <p>The Operate phase is to maintain steady production operations while ensuring that routine maintenance is performed and sound security practices are maintained. Annual security requirements such as controls assessments, PenTests, and annual recertification are completed to ensure the security posture of the system is sound.</p>
-                  <p>The following maintenance issues must be supported throughout this phase:&nbsp;</p>
-                  <ul>
-                  <li>Upgrades</li>
-                  <li>System software patches&nbsp;</li>
-                  <li>Hardware upgrades</li>
-                  <li>Modifications to interfaces with other systems</li>
-                  </ul>
-                  <h4><strong>4. Retire</strong></h4>
-                  <p>The Retire phase ensures compliance with Federal guidelines when retiring a government IT system. There are many aspects to consider, including the following:</p>
-                  <ul>
-                  <li>Records retention</li>
-                  <li>Information security</li>
-                  <li>Investment close-out procedures</li>
-                  </ul>
+                  <p>A federal information system&mdash;"system"&mdash;is composed of components for collecting, storing, and processing data. This includes all hardware, software, humans and processes associated with developing, deploying, administrating, and maintaining the application. Systems provide information and knowledge in the form of digital products. </p>
 
+
+                  <h3><strong>Why do you need an ATO?</strong></h3>
+<p>Before a system can be deployed into production, the federal agency must issue an Authority to Operate (ATO). The process used to obtain ATO is the National Institute of Standard and Technology (NIST) <a href="https://atos.open-control.org/steps/">Risk Management Framework</a>.</p>
+<p>This process ensures that CMS can track and manage the risk exposure of individual systems and the agency at large. It is essential to protect critical resources and sensitive information.</p>
+<h3><strong>When to start working on an ATO?</strong></h3>
+<p>Getting an ATO is a complex, multi-step process that impacts the design and implementation of your system. You should start thinking about how it applies to your system <strong><em>before</em></strong> you begin designing and implementing it. Starting the ATO process after you&rsquo;ve already invested in development can result in costly delays and painful rework.</p>
+<p><strong>We don&rsquo;t develop products using waterfall anymore. It&rsquo;s time to end waterfall compliance. <br /></strong></p>
+<h3><strong>How to use this site?</strong></h3>
+<p>This site should be used<strong> early and often </strong>throughout your System Development Lifecycle (SDLC), especially when you&rsquo;re starting to consider a future project launch or feature release. This not only ensures the long-term protection of sensitive information but also prevents costly, duplicative effort after the project&rsquo;s completion.</p>
+<p>To better understand and prepare for key points in the ATO process and align your SDLC appropriately, it&rsquo;s helpful to think about the ATO in phases:</p>
+<ol>
+<li><a href="initiate.html">Initiate</a></li>
+<li><a href="develop.html">Develop and Assess</a></li>
+<li><a href="operate.html">Operate</a></li>
+<li><a href="retire.html">Retire</a></li>
+</ol>
 
 
                 </main>
