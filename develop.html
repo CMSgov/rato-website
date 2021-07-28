@@ -292,22 +292,35 @@
 
 
                   <p>This phase of the CMS <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/TLC">Target Life Cyle</a> (TLC) framework is document heavy and requires inputs from many stakeholders. To minimize costly delays, each project should have a communication plan in place to ensure all parties are in the loop throughout the process. The plan should include all relevant points of contact, including:</p>
-                  <ul>
-                  <li>CRA</li>
-                  <li>Business Owner</li>
-                  <li>Penetration (Pen) Test Coordinator</li>
-                  <li>ISPG Adaptive Capabilities Testing (ACT) team</li>
-                  <li>Information System Security Officer (ISSO)</li>
-                  <li>System Developer and Maintainer (SDM)</li>
-                  <li>ISSO Contracting Support (ISSOCS)</li>
-                  <li>Privacy Subject Matter Expert (PSME)</li>
-                  </ul>
+
+
+             <ul>
+<li>Information System Security Officer (ISSO)</li>
+<li>ISSO Contracting Support (ISSOCS)</li>
+<li>Cyber Risk Advisor (CRA)</li>
+<li>Business Owner (BO)</li>
+<li>Penetration (Pen) Test Coordinator</li>
+<li>ISPG Adaptive Capabilities Testing (ACT) team</li>
+<li>System Developer and Maintainer (SDM)</li>
+<li>Privacy Subject Matter Expert (PSME)</li>
+</ul>
+
+
+
                   <h3><strong>Design, Develop &amp; Deploy</strong></h3>
                   <p>Design and development is managed by the BO and project team. The TLC requires only a small set of artifacts, and specific methodologies are determined by the BO and team. All initiatives should follow best practices in development and Program Management. Typically, the project team will work with the CMS Cloud Services team to provision the different environments, such as development, implementation and production. As the system is developed, the project team should also move forward with documentation and other compliance activities. </p>
                   <p>Once the system is designed and developed, it is deployed in a non-production environment. It is tested for compliance with requirements and CMS standards. Everything must all comply with CMS Technical Reference Architecture (TRA) and meet security, privacy and accessibility standards before it is production ready. For more information, see the <a href="https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/117_Systems_Security_MAC_ARS.pdf">CMS Acceptable Risk Safeguards (ARS). </a></p>
                   <h3><strong>Define the Accreditation Boundary</strong></h3>
                   <p>Once a system is deployed, its reach and components must be documented. The Accreditation Boundary includes all components of the system that must be authorized by CMS. It defines the system and sets it apart from other systems that it works with. </p>
+
+<p>When defining the accreditation boundary, the CMS cloud service provider provides and supports assets. Additionally, the ADO (Application Developer Owner) provides and supports components. Each project team is responsible for maintaining those assets within the accreditation boundary.</p>
+
+
                   <p>The ISSO works with the project team to define the boundary according to the CMS TRB three tier architecture. If the system is hosted in the CMS AWS cloud GSS, it can access and use approved templates to simplify the process. </p>
+
+
+
+
                   <h3><strong>Implement Controls</strong></h3>
                   <p>The Accreditation Boundary creates an inventory of all system components that will require security controls. A system may be able to inherit controls based on its hosting, platform, data center, and other variables, which can greatly ease the process. With the boundary established, the ISSO will start documenting all <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/InformationSecurity/Info-Security-Library-Items/ARS-31-Publication">ARS 3.1 security controls</a> in CFACTS, starting with any inheritable controls available.</p>
                   <p>Implementing controls often involves conversations between the ISSO and project team, especially technical stakeholders, as well as a CRA. To minimize back-and-forth, all relevant stakeholders should be engaged and prepared to participate. </p>
@@ -316,11 +329,15 @@
                   <h3><strong>Onboarding to Continuous Diagnostics and Mitigation (CDM)&nbsp;</strong></h3>
                   <p>The Cybersecurity and Infrastructure Security Agency (CISA) works with partners across government and the private sector to secure national infrastructure. A big part of this effort&mdash;the <a href="https://www.cisa.gov/cdm">Continuous Diagnostics and Mitigation (CDM)</a> program&mdash;is strengthening the cybersecurity of federal networks and systems. </p>
                   <p>As part of the ATO process, the ISSO onboards each system to CDM through three stages:</p>
+
                   <ul>
                   <li>Stage 1: Engage Data Center assessment</li>
                   <li>Stage 2: Implement and integrate required capabilities</li>
                   <li>Stage 3: Validate and verify data</li>
                   </ul>
+<p>The system is also onboarded to the CMS Cloud Environment for cloud hosting (if applicable), and the CMS Security Operation Center (CCIC) for security monitoring, event management and incident handling.</p>
+
+
                   <h3><strong>Complete Tier 1-3 Artifacts</strong></h3>
                   <p>As seen in section<strong><em> 2.1 Initiate</em></strong>, all systems require Tier 1 Artifacts. Based on the boundary and controls, they may also require additional documentation. The project team should work with their ISSO and CRA to determine which documentation is required for their system and upload it to CFACTS. </p>
                   <h3><strong>Readiness Review</strong></h3>
@@ -340,15 +357,24 @@
                   <li>The CISO mailbox is also notified that the CAAT spreadsheet is complete and available on CFACTS.</li>
                   </ol>
                   <p>To avoid delays, the project should contact a PenTest Coordinator to request the assessment at least 3 months before the ATO deadline. </p>
-                  <h3><strong>ACT</strong></h3>
-                  <p>The ACT program is the risk-based security assessment for CMS systems. To fulfill this requirement, the ISSO emails the <a href="mailto:ACT@cms.hhs.gov">ACT mailbox</a> to request an intake form. The lSSO works with the project team to complete the intake form and with the ACT team to create and complete an assessment plan. Once it is complete, the ACT Final Package will also be uploaded to CFACTS. </p>
+                
+                  <h3><strong>Adaptive Capabilities Testing (ACT)</strong></h3>
+                  <p>The ACT program was created to improve the Security Controls Assessment (SCA) process by introducing risk-based security assessment for CMS systems. Instead of emphasizing technical findings and compliance with Controls (which are still important), ACT facilitates and encourages risk-based decision making. </p>
+                  <p>ACT focuses on the Core Controls that pose the highest risk to CMS and defines mission-oriented security objectives. ACT reports incorporate plain language, relevant findings and actionable results and conclusions to aid project teams&rsquo; risk-based decision making. <a href="https://saf.cms.gov/#/">Read more about ACT</a>.</p>
+                  <p>To fulfill the ACT requirement, the ISSO emails the <a href="mailto:ACT@cms.hhs.gov">ACT mailbox</a> to request an intake form. The lSSO works with the project team to complete the intake form and with the ACT team to create and complete an assessment plan. Once it is complete, the ACT Final Package will also be uploaded to CFACTS.</p>
+                 
+                 
+                 
                   <p>The project team should also reach out to the ACT team at least 3 months before the ATO deadline to schedule an ACT assessment.</p>
+                 
+                 
                   <h3><strong>508 Compliance</strong></h3>
                   <p>Section 508 of the Rehabilitation Act requires all federal systems to be accessible to people with disabilities. To ensure the system is accessible to all users, the project team should consider 508 accessibility compliance throughout design, development and deployment. Before approval, the system is required to meet all applicable 508 guidelines.<strong> <br /></strong></p>
                   <h3><strong>Managing Identified Risks</strong></h3>
                   <p>All information systems include some level of risk. An ATO is designed to document and manage risk, not eliminate it. Once the PenTest and ACT assessment identify risks, the ISSO will work with the project team and CRA to create a Plan of Action and Milestones (POA&amp;M).</p>
+                 
                   <h3><strong>POA&amp;Ms</strong></h3>
-                  <p><a href="https://csrc.nist.gov/glossary/term/Plan_of_Action_and_Milestones">Plan of Action and Milestones (POA&amp;Ms)</a> are high-level statements that describe how a team will address security weaknesses identified for their system. <strong>All federal systems must include POA&amp;Ms&nbsp; to mitigate findings identified during the PenTest and ACT assessment process.</strong> As indicated in the name, a POA&amp;M includes a plan, the resources needed to accomplish the plan, milestones, and scheduled completion dates. For example, a POA&amp;M to mitigate a vulnerability could be:&nbsp;</p>
+                  <p><a href="https://csrc.nist.gov/glossary/term/Plan_of_Action_and_Milestones">Plan of Action and Milestones (POA&amp;Ms)</a> are high-level statements that describe how a team will address security weaknesses identified for their system. All federal systems must document POA&Ms to track and mitigate findings identified during the PenTest and ACT assessment process.</strong> As indicated in the name, a POA&amp;M includes a plan, the resources needed to accomplish the plan, milestones, and scheduled completion dates. For example, a POA&amp;M to mitigate a vulnerability could be:&nbsp;</p>
                   <ol>
                   <li>Contact the vendor&nbsp;</li>
                   <li>Download the patch&nbsp;</li>
