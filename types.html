@@ -177,52 +177,90 @@
                 <main class="usa-layout-docs__main desktop:grid-col-9 usa-prose usa-layout-docs" id="main-content">
                   <h1>Authorizations & Agreements </h1>
              
-                  <h3><strong>Overview</strong></h3>
+               
 
 
                   <p>Every system that is integrated at CMS&mdash;either built in-house or contracted&mdash;must get a compliance authorization to operate and access government data. This ensures that the agency is aware of all components interacting with its data, and that each system can be monitored for compliance and risk mitigation. This helps safeguard sensitive personal information, manage the risk to critical infrastructure, and address cybersecurity issues when they arise. </p>
                   <p>If you are introducing a new system at CMS, you must go through the security and compliance process.</p>
                   <p>CMS also knows that every system is unique and that a one-size-fits-all approach won&rsquo;t work. This page outlines the different types of compliance authorizations provided by CMS to manage agency-wide risk. </p>
                   <h3><strong>Authority to Operate (ATO)</strong></h3>
+                  <h4><strong>Overview</strong></h4>
+
+
                   <p>The Authority to Operate (ATO) is awarded by the CMS Authorization Official (AO) to systems that meet requisite security requirements. Typically, ATOs grant a system compliance for 3-years, although there are circumstances where CMS will authorize a system for a shorter period of time (see more information about this below).</p>
+
+
+
+                  <h4><strong>Why get an ATO?</strong></h4>
+                  <p>Information systems that intend to operate for 3 years or more are required to get an ATO. This includes projects that:</p>
+                  <ul>
+                  <li>Store, process, and distribute Personally Identifiable Information (PII), Personal Health Information (PHI), or other sensitive information</li>
+                  <li>Have been reviewed and approved through the existing CMS governance process (EASi)</li>
+                  <li>Have funding and contracting vehicles to develop, implement and maintain a FISMA information system</li>
+                  </ul>
+                  <h4><strong>Process</strong></h4>
                   <p>To receive an ATO, the system's authorization package must include all (or almost all) control documentation requirements and assessment results, including:</p>
                   <ul>
                   <li>&nbsp;All core security documentation&nbsp;</li>
-                  <li>&nbsp;Most (if not all) findings from PenTest and ACT test have been identified, documented and remediated</li>
+                  <li>&nbsp;Most (if not all) findings from Penetration Testing (PenTest) and Adaptive Capability Testing (ACT) have been identified, documented and remediated</li>
                   </ul>
-                  <p>Before approval, the system's CRA will present a high level executive summary to the AO in an official approval meeting. They explain the completed tasks and any residual risk presented by the system. For the AO to provide a 3-year ATO, the residual risk must be minimal. Things they look to confirm before approval:</p>
+                  <p>Before approval, the system's Cyber Risk Advisor (CRA) will present a high-level executive summary to the AO in an official approval meeting. They explain the completed tasks and any residual risk presented by the system. For the AO to provide a 3-year ATO, the residual risk must be minimal. Things they look to confirm before approval:</p>
                   <ul>
-                  <li>Most control assessment statuses are "Passed" in CFACTs&nbsp;</li>
-                  <li>CMS and HHS have approved the Privacy Impact Assessment</li>
-                  <li>Core documentation such as SSP, RA, CP, CP test, ACT PIA are up to date</li>
-                  <li>All (or almost all) POA&amp;Ms have been remediated (a few low POA&amp;Ms may still remain)</li>
-                  <li>The POA&Ms summary shows remediation from several sources, such as SCA, ACT, PenTest, etc.</li>
+                  <li>Most control assessment statuses are "Passed" in the CMS FISMA Controls Tracking System (CFACTS).</li>
+                  <li>CMS and the Department of Health and Human Services (HHS) have approved the Privacy Impact Assessment (PIA)</li>
+                  <li>Core documentation such as the System Security Plan (SSP), Risk Assessment (RA), Contingency Planning (CP), CP test, and ACT PIA are up to date</li>
+                  <li>All (or almost all) Plans of Action and Milestones (POA&amp;Ms) have been remediated (a few low POA&amp;Ms may still remain)</li>
+                  <li>The POA&amp;Ms summary shows remediation from several sources, such as Security Controls Assessment (SCA), ACT, PenTest, etc.</li>
                   <li>The ongoing POA&amp;Ms summary status should be at minimum risk (typically 0)</li>
                   <li>No critical or high risks have a status of ongoing or delayed (though a few low risks may have an ongoing or delayed status)</li>
                   </ul>
+
+
+
+
+
+
                   <h3><strong>Temporary ATO</strong></h3>
-                  <p>In some cases, the AO is not able to issue a full ATO, but there is still reason to allow the system to operate while security issues are being resolved&mdash;typically for up to one year. Temporary inhibitors often include:</p>
+       
+                
+                
+                
+                
+                
+                
+                  <h4><strong>Overview</strong></h4>
+                  <p>In some cases the AO is not able to issue a full ATO, but there is still reason to allow the system to operate while security issues are being resolved&mdash;typically for up to one year. Temporary inhibitors often include:</p>
                   <ul>
                   <li>Security patches are not available from the vendor yet</li>
-                  <li>Challenges with modernization such as the transition to the cloud issues</li>
-                  <li>Funding issues such as contracting transition or awaiting more resources</li>
+                  <li>Challenges with modernization such as transition to the cloud issues</li>
+                  <li>Funding issues such as contracting transition or awaiting for more resources</li>
                   </ul>
-                  <p>The AO may also choose to issue a temporary ATO to allow a system to operate while the team addresses more significant limitations. These often include critical, high or moderate findings identified by assessments and remediation challenges.</p>
-                  <p>In this scenario, the CRA will present the residual risk to the AO and&mdash;depending on the criticality of the risks and the time to remediate&mdash;the AO can provide a limited time for the project team to address the findings. Once addressed, assessors must retest to ensure the findings are mitigated. </p>
+                  <h4><strong>Why get a Temporary ATO?</strong></h4>
+                  <p>If critical issues or risks are identified during Penetration Testing and/or Adaptive Capabilities Testing (ACT), the Authorizing Official (AO) may choose to issue a Temporary ATO to allow a system to operate while the team addresses the issues. These often include critical, high or moderate findings identified by assessments, and remediation challenges. Typically, a Temporary ATO lasts 6-12 months.</p>
+                  <h4><strong>Process</strong></h4>
+                  <p>In this scenario, the CRA will present the residual risk to the AO and&mdash;depending on the criticality of the risks and the time to remediate&mdash;the AO can provide a limited time for the project team to address the findings. Once addressed, assessors must retest to ensure the findings are mitigated.</p>
                   <p>Once the temporary ATO expires, the project team will update their mitigation efforts and work with the CRA to present for a second authorization. If the system risk has been sufficiently addressed, the AO can then issue a full ATO.&nbsp;&nbsp;</p>
+                
+                
+                
+                
+                
                   <h3><strong>Ongoing Authorization to Operate (OATO)</strong></h3>
-                  <p>The Ongoing Authorization to Operate (OATO) is a new initiative at CMS. It&rsquo;s goal is to fundamentally change authorization and compliance from a reactive evaluation to proactive, ongoing monitoring. </p>
+                  <h4><strong>Overview</strong></h4>
+                  <p>The Ongoing Authorization to Operate (OATO) is a new initiative at CMS. Its goal is to fundamentally change authorization and compliance from a reactive evaluation to proactive, ongoing monitoring. The OATO framework is currently a work in progress and the process and criteria to onboard systems has not been created yet. </p>
+                  <p>To be eligible for OATO, systems must leverage the latest control automation tools, including the <a href="https://saf.cms.gov/#/">Security Automation Framework (SAF).</a> All CDM tools must be implemented and tracking the system's hardware (HWAN), software (SWAN), and vulnerability (VUL).&nbsp;</p>
+                  <h4><strong>Why get an OATO?</strong></h4>
                   <p>Rather than subjecting project teams to the current 3-year compliance cycle, the OATO will provide CMS real-time data about a system&rsquo;s security posture. This will reduce the load on BOs and project teams, and give CMS a clearer picture of its risk level at a given moment. </p>
                   <p>Advantages of OATO include:</p>
                   <ul>
                   <li>Removing the three-year ATO cycle burden</li>
-                  <li>New capabilities and increased visibility into FISMA systems for near &ldquo;real-time&rdquo; risk analysis</li>
+                  <li>New capabilities and increased visibility into Federal Information Security Management Act (FISMA) systems for near &ldquo;real-time&rdquo; risk analysis</li>
                   <li>Improved risk metric reports through automation and on demand dashboards</li>
-                  <li>Empowering the BO and ISSOs with control of their data and risk management</li>
+                  <li>Empowering the Business Owner (BO) and Information System Security Officer (ISSO) with control of their data and risk management</li>
                   <li>Improving overall risk posture of the FISMA system and ultimately the agency</li>
                   <li>Automates the collection and dissemination of data</li>
                   </ul>
-                  <p>The first iteration of OATO will focus only on systems in the CMS AWS cloud enclave that meet the following criteria:</p>
+                  <p>The first iteration of OATO will focus only on systems in the CMS Amazon Web Services (AWS) cloud enclave that meet the following criteria:</p>
                   <ul>
                   <li>System must be fully cloud hosted &mdash; no hybrids</li>
                   <li>Security Hub (SecHub) must be enabled</li>
@@ -231,9 +269,6 @@
                   <li>System must meet metrics baseline requirements</li>
                   </ul>
                   <p>OATO is in the process of being developed and implemented. Stay tuned for news and updates about the initiative.</p>
-
-
-
 
 
 
@@ -248,17 +283,35 @@
                 
                 
                   <h3><strong>Authority to Pilot</strong></h3>
-                  <p>CMS takes cybersecurity and compliance very seriously. However, the agency also recognizes that the ATO process requires resources and could stifle innovation&mdash;or worse, incentivize non-compliance. To encourage innovation, experimentation and compliance, CMS recently introduced the Authority to Pilot (ATP) program to allow Business Owners (BO) to test a solution before getting an ATO. </p>
-                  <p>The goal of ATP is to help ISPG collect as much risk maturity information about the system from the BO as possible. To do so, the BO works with ISPG to complete a risk assessment. Based on the results and a letter of intent, the AO can provide a very short amount of time for the BO to test-run the system. </p>
-                  <p>&nbsp;The ATP initiative is gaining maturity. However, now every applicant is tested and assessed on a case-by-case basis. To provide much needed clarity and direction to customers, ISPG is creating a formal policy, standards and guidelines for the ATP program. Additionally, due to inherent risk, solutions that will host Personal Health Information (PHI) and/or Personally Identifiable Information (PII) are unlikely to receive an ATP.</p>
+            
 
+
+
+                  <h4><strong>Overview</strong></h4>
+<p>CMS takes cyber security and compliance very seriously. However, the agency also recognizes that the ATO process requires resources and could stifle innovation&mdash;or worse, incentivize noncompliance. To encourage innovation, experimentation and compliance, CMS recently introduced the Authority to Pilot (ATP) program to allow BOs to test a solution before getting an ATO. </p>
+<p>The goal of ATP is to help the CMS Information Security and Privacy Group (ISPG) collect as much risk maturity information about the system from the BO as possible. To do so, the BO works with ISPG to complete a risk assessment. Based on the results and a letter of intent, the AO can provide a very short amount of time for the BO to test-run the system.&nbsp;</p>
+<h4><strong>Why get an ATP?</strong></h4>
+<p>A Business Owner (BO) may want to understand the value of a new tool or product before moving forward with an ATO. An ATP allows the project team to do some temporary testing before seeking a full authorization. To minimize risk, ATP candidates are encouraged not to include PII, PHI or sensitive information in their pilot.</p>
+<h4><strong>Process</strong></h4>
+<p>&nbsp;The ATP initiative is gaining maturity. However, now every applicant is tested and assessed on a case-by-case basis. To provide much needed clarity and direction to customers, ISPG is creating a formal policy, standards and guidelines for the ATP program. Additionally, due to inherent risk, solutions that will host Personal Health Information (PHI) and/or Personally Identifiable Information (PII) are unlikely to receive an ATP.</p>
+
+               
+               
+               
+               
+               
+               
                   <h3><strong>Risk-Based Determinations (RBD)</strong></h3>
+                  <h4><strong>Overview</strong></h4>
+                  <p>When assessors determine a system has an unacceptable amount of risk, they identify and share findings with the ISSO and BO. The ISSO and BO review the findings, and once accepted a POA&amp;M is created to remediate the risk. The ISSO and project teams are responsible for documenting milestones for each POA&amp;M&mdash;high level statements that describe how the project team will mitigate the finding. </p>
+                  <h4><strong>Why get a RBD?</strong></h4>
+                  <p>For many reasons, sometimes it is difficult for a system to complete the POA&amp;M completely. To address these situations and allow the system to operate, CMS has the RBD process. </p>
+                  <h4><strong>Process</strong></h4>
+                  <p>Once a finding from an assessment becomes a POA&amp;M, the project team must describe how they are going to mitigate it. RBDs allow ISSOs and BOs to present some level of risk management when POA&amp;Ms can't be remediated completely. This only applies to POA&amp;Ms that cannot be remediated due to technology or funding limitations. </p>
+                  <p>The RBD describes the business and technical challenges preventing the closing of the POA&amp;M. It also includes other compensating controls to help reduce the risk, if applicable.</p>
+                  <p>After being documented in CFACTs by the ISSO and signed by the BO, the RBD is sent to the CRA to present to the AO. Once the AO approves the RBD, the ISSO uploads it to each open POA&amp;M, regardless of their status.</p>
 
-
-                  <p>When assessors determine a system has an unacceptable amount of risk, they identify and share findings with ISSOs and BOs. The ISSO and BO review the findings, and once accepted a Plan of Actions and Milestones (POA&amp;Ms) is created to remediate the risk. The ISSO and project teams are responsible for documenting milestones for each POA&amp;M&mdash;high level statements that describe how the project team will mitigate the finding. </p>
-                  <p>For many reasons, sometimes it is difficult for a system to complete the POA&amp;M completely. To address these situations and allow the system to operate, CMS has the Risk Based Determination (RBD) process. </p>
-                  <p>RBD allows ISSOs and BOs to present some level of risk management when POA&amp;Ms can't be remediated completely. This only applies to POA&amp;Ms that cannot be remediated due to technology or funding limitations.</p>
-                  <p>After being documented in CFACTs by the ISSO and signed by the BO, the RBD is sent to the CRA to present to the AO. Once the AO approves the RBD, the ISSO uploads it to each open POA&amp;Ms, regardless of their status.</p>
+             
 
 
 
@@ -268,30 +321,47 @@
                  
 
 
-                  <p>Many systems share data with other systems within CMS and across different agencies. To safeguard the data they communicate, it often makes sense for connected systems to enter into security agreements. The two most used agreements at CMS are the <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/InformationSecurity/Info-Security-Library-Items/Interconnection-Security-Agreement-ISA-Template">Interconnection Security Agreement (ISA)</a> and the <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/InformationSecurity/Info-Security-Library-Items/Memorandum-of-Understanding-MOU-Template">Memorandum of Understanding (MOU)</a>. These high-level agreements support the best security posture to protect the data shared by systems across organizations. </p>
+                
+
+
+                  <h4><strong>Overview</strong></h4>
+                  <p>Many systems share data with other systems within CMS and across different agencies. To safeguard the data they communicate, it often makes sense for connected systems to enter into security agreements.</p>
+                  <h4><strong>Why get an MOU or ISA?&nbsp;</strong></h4>
+                  <p>The <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/InformationSecurity/Info-Security-Library-Items/Interconnection-Security-Agreement-ISA-Template">Interconnection Security Agreement (ISA)</a> and the <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/InformationSecurity/Info-Security-Library-Items/Memorandum-of-Understanding-MOU-Template">Memorandum of Understanding (MOU)</a> are the two most used agreements at CMS. These high-level agreements support the best security posture to protect the data shared by systems across organizations.&nbsp;</p>
+                  <h4><strong>Process</strong></h4>
                   <p>The agreements, provided by CMS as templates, are used to ensure the CMS data is protected. They are not legal documents, but they can't be altered without the approval of CMS legal counsel. Both templates are similar&mdash;the difference between the two is that the MOU is used between two or more systems approved under the same AO at CMS. An ISA requires the approval of the CMS AO and the AO of the other organization(s). </p>
-                  <p>Once all parties sign the agreements, the CRA for the system presents the documents to the AO for approval. Once approved, the agreement is uploaded to CFACTs.</p>
+                  <p>Once all parties sign the agreements, the CRA for the system presents the documents to the AO for approval. Once approved, the agreement is uploaded to CFACTS.</p>
+
+
+
+
 
 
 
                   <h3><strong>Re-Authorization</strong></h3>
-                  <p>Your system may need to be reassessed and re-authorized if your application team is planning to make significant changes, including but not limited to:</p>
-                  <ul>
-                  <li>System security boundary</li>
-                  <li>Encryption methodologies</li>
-                  <li>Administrative functionality within the application</li>
-                  <li>The kinds of information you store (for example, <a href="https://atos.open-control.org/categorization/#pii">personally identifiable information (PII)</a>)</li>
-                  <li>The external services used or how/what data flows to/from them</li>
-                  </ul>
-                  <p>Example changes that do <em>not</em> require re-authorization, as long as they don&rsquo;t include the above:</p>
-                  <ul>
-                  <li>Features and functionality</li>
-                  <li>Bug fixes</li>
-                  <li>Interface changes</li>
-                  <li>Documentation updates</li>
-                  </ul>
-                  <p>The Authorizing Official determines whether a system needs re-authorization. If you&rsquo;re planning a change that you think may require re-authorization, contact them.</p>
-                  
+
+                  <h4><strong>Overview</strong></h4>
+<p><span >A system may need to be reassessed and re-authorized if the application team is planning to make significant changes, including but not limited to:</span></p>
+<ul>
+<li ><span >System security boundary</span></li>
+<li ><span >Encryption methodologies</span></li>
+<li ><span >Administrative functionality within the application</span></li>
+<li ><span >The kinds of information you store (for example, </span><a href="https://atos.open-control.org/categorization/#pii"><span >PII)</span></a><span >)</span></li>
+<li ><span >The external services used or how/what data flows to/from them</span></li>
+</ul>
+<p><span >Example changes that do </span><em><span >not</span></em><span > require re-authorization, as long as they don&rsquo;t include the above:</span></p>
+<ul>
+<li ><span >Features and functionality</span></li>
+<li ><span >Bug fixes</span></li>
+<li ><span >Interface changes</span></li>
+<li ><span >Documentation updates</span></li>
+</ul>
+<h4><strong>Why get a Re-Authorization?</strong></h4>
+<p><span >If a change to a system is significant (see above), the entire system must be reassessed and reauthorized.</span></p>
+<h4><strong>Process</strong></h4>
+<p><span >The project completes a system impact assessment to determine the level of change. If the change is significant, the team schedules an ACT assessment to determine if there are any potential findings. If there are findings, the team works to mitigate them (see ATO Process above). <br /></span></p>
+<p><span >Once findings are mitigated to an acceptable level, the CRA presents the case for the Re-Authorization to the BO for a new ATO letter.</span></p>
+<p><span >If you&rsquo;re planning a change that you think may require re-authorization, please contact the Authorizing Official.</span></p>
                  
                   
                 </main>
