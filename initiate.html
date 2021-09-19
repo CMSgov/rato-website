@@ -326,7 +326,7 @@
                   <li>Contingency plans</li>
                   <li>Architecture diagrams</li>
                   <li>Hardware and software inventories</li>
-                  <li>Privacy impact assessments</li>
+                 
                   <li>Vulnerability scanning documentation</li>
                   <li>Open Plan of Action &amp; Milestones (PO&amp;AMs)</li>
                   <li>TRB Letter</li>
@@ -349,34 +349,25 @@
                   
                   <p>As you might imagine, collecting and entering all required information in CFACTS can take much time and resources. To avoid delays in your development process, it is important to start collecting your system documentation as soon as possible.</p>
                   <h3><strong>Categorize System Security</strong></h3>
-                  <p>During the documentation process, the team will work together to add all required information in CFACTS. Once all required documentation is in CFACTS, the team will work together to categorize the system. <strong>At the end of this process, the system will be categorized as either High, Medium, or Low risk</strong> according to the <a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf">Federal Information Processing Standards (FIPS) Publication 199</a>. This will determine the required controls. In particular, they will determine whether it should be classified as a High Value Asset (HVA) System. HVAs require additional security measures due to their unique risks.</p>
-                  <p>For reference, CMS has a <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/InformationSecurity/Info-Security-Library-Items/Tool-System-Categorization-Worksheet">FIPS 199 categorization tool</a> in the <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/InformationSecurity/Information-Security-Library">Information Security and Privacy Library. </a></p>
-                  <p>In addition to risk level, the system architecture, components and boundary are documented in CFACTS. The boundary separates what is part of the system from what is not. It is documented through network diagrams, hardware and software inventories, and narrative explanation. </p>
-                  <p>Based on the information provided, the system is assigned a baseline of controls. These controls follow the <a href="https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/117_Systems_Security_MAC_ARS.pdf">CMS Acceptable Risk Safeguard (ARS) standard publication</a>. The ISSO and project team will provide implementation details for each control in CFACTS. This often includes some back-and-forth between the development team, the ISSO and the CRA as the artifacts are reviewed and accepted.</p>
 
 
 
-                  <h3><strong>Boundary Documentation</strong></h3>
-                
-
-                  <p>In addition to risk level, the system architecture, components and boundary are documented in CFACTS. The boundary separates what is part of the system from what is not. It is documented through network diagrams, hardware and software inventories, and narrative explanation. </p>
-                  <img src="imgs/boundry.png"/>
-
-
-
-
-                  <p>Including an exemplary boundary diagram will facilitate the assessment of your system and expedite the ATO process. This includes what you&rsquo;re directly responsible for building and maintaining and what your system is connected to and utilizing that someone else is responsible for building and maintaining. A good boundary diagram should:</p>
-                  <ol>
-                  <li>Include CMS shared services and how they connect to your system</li>
-                  <li>Show proxy - URL Filtering and whitelisting outbound traffic</li>
-                  <li>Separate S3 buckets for each Subnet</li>
-                  <li>Display zonal VRF between VDCs and AWS</li>
-                  <li>Include API Consumers internal access path(s)</li>
-                  <li>Depict all AWS Services being used</li>
-                  </ol>
-                  <p>If the project team has questions or wants to discuss their specific design, they should email <a href="mailto:cms-trb@cms.hhs.gov">cms-trb@cms.hhs.gov</a>.&nbsp;</p>
-                  <h4><strong>Control Baseline</strong></h4>
-                  <p>Based on the information provided, the system is assigned a baseline of controls. These controls follow the <a href="https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/117_Systems_Security_MAC_ARS.pdf">CMS Acceptable Risk Safeguard (ARS) standard publication</a>. The ISSO and project team will provide implementation details for each control in CFACTS. This often includes some back-and-forth between the development team, the ISSO and the CRA as the artifacts are reviewed and accepted.</p>
+                 <p>During the documentation process, the team will work together to add all required information in CFACTS. Once all required documentation is in CFACTS, the team will work together to categorize the system. <strong>At the end of this process, the system will be categorized as either High, Medium, or Low risk</strong> according to the <a href="https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.199.pdf">Federal Information Processing Standards (FIPS) Publication 199</a>. This will determine the required controls. In particular, they will determine whether it should be classified as a High Value Asset (HVA) System. HVAs require additional security measures due to their unique risks.</p>
+<p>For reference, CMS has a <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/InformationSecurity/Info-Security-Library-Items/Tool-System-Categorization-Worksheet">FIPS 199 categorization tool</a> in the <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/InformationSecurity/Information-Security-Library">Information Security and Privacy Library. </a></p>
+<h4><strong>Boundary Documentation</strong></h4>
+<p>In addition to risk level, the system architecture, components and boundary are documented in CFACTS. The boundary separates what is part of the system from what is not. It is documented through network diagrams, hardware and software inventories, and narrative explanation. </p>
+<p>Including an exemplary boundary diagram will facilitate the assessment of your system and expedite the ATO process. This includes what you&rsquo;re directly responsible for building and maintaining and what your system is connected to and utilizing that someone else is responsible for building and maintaining. A good boundary diagram should:</p>
+<ol>
+<li>Include CMS shared services and how they connect to your system</li>
+<li>Show proxy - URL Filtering and whitelisting outbound traffic</li>
+<li>Separate S3 buckets for each Subnet</li>
+<li>Display zonal VRF between VDCs and AWS</li>
+<li>Include API Consumers internal access path(s)</li>
+<li>Depict all AWS Services being used</li>
+</ol>
+<p>If the project team has questions or wants to discuss their specific design, they should email <a href="mailto:cms-trb@cms.hhs.gov">cms-trb@cms.hhs.gov</a>.&nbsp;</p>
+<h4><strong>Control Baseline</strong></h4>
+<p>Based on the information provided, the system is assigned a baseline of controls. These controls follow the <a href="https://www.cms.gov/Regulations-and-Guidance/Guidance/Manuals/Downloads/117_Systems_Security_MAC_ARS.pdf">CMS Acceptable Risk Safeguard (ARS) standard publication</a>. The ISSO and project team will provide implementation details for each control in CFACTS. This often includes some back-and-forth between the development team, the ISSO and the CRA as the artifacts are reviewed and accepted.</p>
 
 
                 </main>
